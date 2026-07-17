@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Sweet Moments — Footer
+   Mobile-first
+   ========================================================================== */
+
+.site-footer {
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon-muted);
+  padding-top: var(--space-8);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-7);
+  border-bottom: 1px solid rgba(246, 233, 227, 0.15);
+}
+
+@media (min-width: 640px) {
+  .footer-top { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .footer-top { grid-template-columns: 1.4fr 1fr 1fr 1fr 1.2fr; gap: var(--space-5); }
+}
+
+.footer-brand .logo { color: var(--color-text-on-maroon); margin-bottom: var(--space-3); }
+.footer-brand p { font-size: var(--fs-small); line-height: 1.7; }
+
+.footer-social { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+.footer-social a {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(246, 233, 227, 0.3);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+.footer-social a:hover { background: var(--color-gold-500); border-color: var(--color-gold-500); color: var(--color-gold-700); }
+.footer-social svg { width: 16px; height: 16px; }
+
+.footer-col h4 {
+  color: var(--color-text-on-maroon);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+.footer-col ul li { margin-bottom: var(--space-2); }
+.footer-col a { font-size: var(--fs-small); transition: color var(--transition-fast); }
+.footer-col a:hover { color: var(--color-text-on-maroon); }
+
+.footer-newsletter input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(246, 233, 227, 0.3);
+  background: rgba(255,255,255,0.05);
+  color: var(--color-text-on-maroon);
+  margin-bottom: var(--space-3);
+}
+.footer-newsletter input::placeholder { color: var(--color-text-on-maroon-muted); }
+.footer-app-badges { display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap; }
+.footer-app-badges img { height: 36px; }
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  text-align: center;
+  padding: var(--space-5) 0;
+  font-size: var(--fs-xs);
+}
+@media (min-width: 768px) {
+  .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; }
+}
+.footer-payments { display: flex; gap: var(--space-2); align-items: center; }
+.footer-payments img { height: 20px; }

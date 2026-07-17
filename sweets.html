@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Sweets | Sweet Moments</title>
+<meta name="description" content="Shop authentic handcrafted Indian sweets — traditional mithai, Bengali sweets, milk sweets, dry fruit sweets and more from Sweet Moments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<!-- ===== HEADER (partials/header.html) ===== -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>100% Pure &amp; Fresh</span>
+      <span>Handcrafted with Love</span>
+      <span>Delivery Across India</span>
+    </div>
+    <div class="topbar-right">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/>
+        <path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/>
+      </svg>
+      <span>Sweet Moments</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sweets.html" class="active">Sweets</a></li>
+        <li><a href="gift-boxes.html">Gift Boxes</a></li>
+        <li><a href="festival-specials.html">Festival Specials</a></li>
+        <li><a href="corporate-orders.html">Corporate Orders</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn hide-mobile" href="account.html" aria-label="My account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">3</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" data-search-bar>
+    <div class="container">
+      <input type="search" placeholder="Search for sweets, gift boxes..." aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav data-open="false">
+  <div class="mobile-nav-backdrop" data-mobile-nav-backdrop></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+      <button class="mobile-nav-close" data-mobile-nav-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="sweets.html" class="active">Sweets</a></li>
+      <li><a href="gift-boxes.html">Gift Boxes</a></li>
+      <li><a href="festival-specials.html">Festival Specials</a></li>
+      <li><a href="corporate-orders.html">Corporate Orders</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="account.html">My Account</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+<!-- ===== /HEADER ===== -->
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span>Sweets
+    </nav>
+
+    <div class="page-heading">
+      <h1>Our Sweets</h1>
+      <p>Handcrafted daily in small batches using pure ghee and the finest ingredients — explore our full range of traditional and modern Indian mithai.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="shop-layout">
+
+      <!-- ===== FILTERS SIDEBAR ===== -->
+      <div class="filters-backdrop" data-filters-backdrop></div>
+      <aside class="filters-panel" data-filters-panel data-open="false" aria-label="Product filters">
+        <div class="filters-panel-header">
+          <h3 style="margin:0;">Filters</h3>
+          <button class="mobile-nav-close" data-filters-close aria-label="Close filters">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <div class="filter-group">
+          <h3>Category</h3>
+          <label class="filter-check"><input type="checkbox" checked> Traditional Sweets <span class="filter-count">42</span></label>
+          <label class="filter-check"><input type="checkbox"> Bengali Sweets <span class="filter-count">18</span></label>
+          <label class="filter-check"><input type="checkbox"> Milk Sweets <span class="filter-count">24</span></label>
+          <label class="filter-check"><input type="checkbox"> Dry Fruit Sweets <span class="filter-count">15</span></label>
+          <label class="filter-check"><input type="checkbox"> Sugar-Free Sweets <span class="filter-count">9</span></label>
+          <label class="filter-check"><input type="checkbox"> Namkeen &amp; Snacks <span class="filter-count">21</span></label>
+          <label class="filter-check"><input type="checkbox"> Bakery Items <span class="filter-count">11</span></label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Price Range</h3>
+          <div class="price-range-row">
+            <span>₹100</span>
+            <input type="range" min="100" max="3000" value="1200" aria-label="Maximum price">
+            <span>₹3000</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Dietary</h3>
+          <label class="filter-check"><input type="checkbox"> Sugar-Free</label>
+          <label class="filter-check"><input type="checkbox"> Vegan</label>
+          <label class="filter-check"><input type="checkbox"> No Preservatives</label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Customer Rating</h3>
+          <label class="filter-check"><input type="checkbox"> ★★★★★ &amp; up</label>
+          <label class="filter-check"><input type="checkbox"> ★★★★☆ &amp; up</label>
+        </div>
+
+        <button class="btn btn-primary filter-apply-btn">Apply Filters</button>
+      </aside>
+
+      <!-- ===== PRODUCT LISTING ===== -->
+      <div>
+        <div class="shop-toolbar">
+          <p class="shop-result-count">Showing 1–12 of 48 sweets</p>
+          <div class="shop-toolbar-right">
+            <button class="filter-toggle-btn" data-filter-toggle>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+              Filters
+            </button>
+            <select class="sort-select" aria-label="Sort products">
+              <option>Sort by: Popularity</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Customer Rating</option>
+              <option>Newest First</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="shop-product-grid">
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 65,58 75,90 50,70 25,90 35,58 10,40 40,40" fill="#f0c988"/></svg>
+              <button class="wishlist-btn" aria-label="Add Kaju Katli to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Kaju Katli</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.8)</span></div>
+              <p class="product-price">₹720 <span>/ 250g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Kaju Katli"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Kaju Katli to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><circle cx="35" cy="55" r="18" fill="#7a3418"/><circle cx="60" cy="45" r="18" fill="#8a4020"/><circle cx="65" cy="68" r="14" fill="#7a3418"/></svg>
+              <button class="wishlist-btn" aria-label="Add Gulab Jamun to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Gulab Jamun</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.7)</span></div>
+              <p class="product-price">₹320 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Gulab Jamun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Gulab Jamun to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><circle cx="38" cy="50" r="20" fill="#f6efe0"/><circle cx="66" cy="55" r="16" fill="#fdfaf3"/></svg>
+              <button class="wishlist-btn" aria-label="Add Rasgulla to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Rasgulla</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.6)</span></div>
+              <p class="product-price">₹280 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Rasgulla"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Rasgulla to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><circle cx="35" cy="45" r="16" fill="#e8952e"/><circle cx="60" cy="40" r="16" fill="#ec9f3c"/><circle cx="50" cy="65" r="16" fill="#e8952e"/></svg>
+              <button class="wishlist-btn" aria-label="Add Motichoor Ladoo to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Motichoor Ladoo</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.8)</span></div>
+              <p class="product-price">₹360 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Motichoor Ladoo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Motichoor Ladoo to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><rect x="25" y="30" width="50" height="40" rx="4" fill="#f6efe0"/><rect x="25" y="30" width="50" height="10" fill="#eec06a"/></svg>
+              <button class="wishlist-btn" aria-label="Add Rasmalai to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Rasmalai</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.9)</span></div>
+              <p class="product-price">₹420 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Rasmalai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Rasmalai to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><rect x="22" y="28" width="56" height="44" fill="#e2c07a"/><rect x="22" y="28" width="56" height="44" fill="url(#kalakandTex)" opacity="0.3"/><defs><pattern id="kalakandTex" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1" fill="#8a5a2b"/></pattern></defs></svg>
+              <button class="wishlist-btn" aria-label="Add Kalakand to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Kalakand</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.7)</span></div>
+              <p class="product-price">₹380 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Kalakand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Kalakand to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><polygon points="50,25 65,45 50,65 35,45" fill="#c98a3c"/><polygon points="50,35 58,47 50,59 42,47" fill="#e2a24e"/></svg>
+              <button class="wishlist-btn" aria-label="Add Mysore Pak to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Mysore Pak</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.6)</span></div>
+              <p class="product-price">₹340 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Mysore Pak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Mysore Pak to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><rect x="30" y="35" width="40" height="30" rx="15" fill="#f6efe0"/></svg>
+              <button class="wishlist-btn" aria-label="Add Soan Papdi to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Soan Papdi</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.5)</span></div>
+              <p class="product-price">₹260 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Soan Papdi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Soan Papdi to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><circle cx="40" cy="50" r="17" fill="#eec06a"/><circle cx="65" cy="50" r="17" fill="#e2a24e"/></svg>
+              <button class="wishlist-btn" aria-label="Add Peda to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Kesar Peda</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.7)</span></div>
+              <p class="product-price">₹300 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Kesar Peda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Kesar Peda to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><rect x="28" y="32" width="44" height="36" fill="#c98a3c"/><rect x="28" y="32" width="44" height="36" fill="url(#barfiTex)" opacity="0.25"/><defs><pattern id="barfiTex" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#8a5a2b"/></pattern></defs></svg>
+              <button class="wishlist-btn" aria-label="Add Barfi to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Badam Barfi</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.8)</span></div>
+              <p class="product-price">₹680 <span>/ 250g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Badam Barfi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Badam Barfi to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><path d="M30 60 Q35 30 50 45 Q65 30 70 60 Q50 75 30 60z" fill="#e8952e"/></svg>
+              <button class="wishlist-btn" aria-label="Add Jalebi to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Jalebi</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.6)</span></div>
+              <p class="product-price">₹240 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Jalebi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Jalebi to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-thumb">
+              <svg viewBox="0 0 100 100"><rect x="30" y="35" width="40" height="30" rx="6" fill="#f6efe0"/><circle cx="50" cy="50" r="6" fill="#eec06a"/></svg>
+              <button class="wishlist-btn" aria-label="Add Sandesh to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            </div>
+            <div class="card-body">
+              <h3 class="product-title">Sandesh</h3>
+              <div class="stars">★★★★★ <span class="rating-count">(4.7)</span></div>
+              <p class="product-price">₹350 <span>/ 500g</span></p>
+              <div class="product-actions">
+                <button class="icon-action" aria-label="Quick view Sandesh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                <button class="icon-action icon-action-solid" aria-label="Add Sandesh to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <button class="page-btn" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER (partials/footer.html) ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+        <p>Bringing sweetness to your life with authentic, handcrafted mithai made from the finest ingredients. Every box tells a story of tradition and love.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a4 4 0 00-4 4v2H9v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html">Our Sweets</a></li>
+          <li><a href="gift-boxes.html">Gift Boxes</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="track-order.html">Track Order</a></li>
+          <li><a href="returns.html">Return &amp; Refund</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="corporate-orders.html">Corporate Orders</a></li>
+          <li><a href="gift-boxes.html">Wedding Gifting</a></li>
+          <li><a href="franchise.html">Franchise Opportunities</a></li>
+          <li><a href="store-locator.html">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:var(--fs-small); margin-bottom:var(--space-3);">Subscribe for sweet offers &amp; updates.</p>
+        <input type="email" placeholder="Your email address">
+        <button class="btn btn-primary btn-block">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Moments. All Rights Reserved.</p>
+      <div class="flex gap-3">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

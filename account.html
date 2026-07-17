@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account | Sweet Moments</title>
+<meta name="description" content="Manage your Sweet Moments account — orders, wishlist, addresses, loyalty points and referrals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Top utility bar (desktop only) -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>100% Pure &amp; Fresh</span>
+      <span>Handcrafted with Love</span>
+      <span>Delivery Across India</span>
+    </div>
+    <div class="topbar-right">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/>
+        <path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/>
+      </svg>
+      <span>Sweet Moments</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="gift-boxes.html">Gift Boxes</a></li>
+        <li><a href="festival-specials.html">Festival Specials</a></li>
+        <li><a href="corporate-orders.html">Corporate Orders</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn hide-mobile" href="account.html" aria-label="My account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">3</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Expandable search bar -->
+  <div class="search-bar" data-search-bar>
+    <div class="container">
+      <input type="search" placeholder="Search for sweets, gift boxes..." aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav data-open="false">
+  <div class="mobile-nav-backdrop" data-mobile-nav-backdrop></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+      <button class="mobile-nav-close" data-mobile-nav-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="sweets.html">Sweets</a></li>
+      <li><a href="gift-boxes.html">Gift Boxes</a></li>
+      <li><a href="festival-specials.html">Festival Specials</a></li>
+      <li><a href="corporate-orders.html">Corporate Orders</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="account.html">My Account</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span>My Account
+    </nav>
+
+    <div class="page-heading" style="padding-bottom:var(--space-5);">
+      <h1>Welcome back, Deepak 👋</h1>
+      <p>Here's what's happening with your account.</p>
+    </div>
+
+    <div class="account-layout">
+
+      <!-- ===== SIDEBAR ===== -->
+      <aside class="account-sidebar">
+        <div class="account-profile">
+          <span class="account-avatar">DM</span>
+          <div>
+            <h3>Deepak M</h3>
+            <span>deepak@example.com</span>
+          </div>
+        </div>
+        <nav class="account-nav">
+          <a href="account.html" class="active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+            Dashboard
+          </a>
+          <a href="order-history.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+            Order History
+          </a>
+          <a href="saved-addresses.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.5-7-12a7 7 0 0114 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Saved Addresses
+          </a>
+          <a href="profile.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+            Profile Information
+          </a>
+          <a href="change-password.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+            Change Password
+          </a>
+          <a href="notifications.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 20a2 2 0 004 0"/></svg>
+            Notifications
+          </a>
+          <a href="loyalty.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+            Loyalty Points
+          </a>
+          <a href="referrals.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 6-6s6 2.5 6 6M14 14c2.8 0 5.5 2 5.5 6"/></svg>
+            Reward Earnings
+          </a>
+          <a href="wishlist.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            Wishlist
+          </a>
+          <a href="index.html" class="logout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+            Logout
+          </a>
+        </nav>
+      </aside>
+
+      <!-- ===== MAIN DASHBOARD ===== -->
+      <div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></span>
+            <p class="stat-value">24</p>
+            <p class="stat-label">Total Orders</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span>
+            <p class="stat-value">1,250</p>
+            <p class="stat-label">Reward Points</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 6V4H8v2"/><circle cx="16" cy="12.5" r="1.5"/></svg></span>
+            <p class="stat-value">₹350</p>
+            <p class="stat-label">Wallet Balance</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 6-6s6 2.5 6 6"/></svg></span>
+            <p class="stat-value">₹600</p>
+            <p class="stat-label">Referral Earnings</p>
+          </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="dash-panel">
+          <div class="dash-panel-heading">
+            <h2>Recent Orders</h2>
+            <a href="order-history.html" class="view-all">View All Orders</a>
+          </div>
+          <div class="order-row">
+            <div>
+              <p class="order-id">#SM47245</p>
+              <p class="order-meta">2 items · 10 May 2026</p>
+            </div>
+            <span class="order-status delivered">Delivered</span>
+          </div>
+          <div class="order-row">
+            <div>
+              <p class="order-id">#SM47244</p>
+              <p class="order-meta">1 item · 8 May 2026</p>
+            </div>
+            <span class="order-status shipped">Shipped</span>
+          </div>
+          <div class="order-row">
+            <div>
+              <p class="order-id">#SM47243</p>
+              <p class="order-meta">3 items · 3 May 2026</p>
+            </div>
+            <span class="order-status processing">Processing</span>
+          </div>
+          <div class="order-row">
+            <div>
+              <p class="order-id">#SM47239</p>
+              <p class="order-meta">1 item · 28 Apr 2026</p>
+            </div>
+            <span class="order-status cancelled">Cancelled</span>
+          </div>
+        </div>
+
+        <!-- Wishlist -->
+        <div class="dash-panel">
+          <div class="dash-panel-heading">
+            <h2>Wishlist</h2>
+            <a href="wishlist.html" class="view-all">View All</a>
+          </div>
+          <div class="wishlist-grid">
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 65,58 75,90 50,70 25,90 35,58 10,40 40,40" fill="#f0c988"/></svg>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Kaju Katli</h3>
+                <p class="product-price">₹720 <span>/ 250g</span></p>
+                <button class="btn btn-outline btn-sm btn-block">Add to Cart</button>
+              </div>
+            </article>
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><circle cx="40" cy="50" r="17" fill="#eec06a"/><circle cx="65" cy="50" r="17" fill="#e2a24e"/></svg>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Kesar Peda</h3>
+                <p class="product-price">₹300 <span>/ 500g</span></p>
+                <button class="btn btn-outline btn-sm btn-block">Add to Cart</button>
+              </div>
+            </article>
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><path d="M30 60 Q35 30 50 45 Q65 30 70 60 Q50 75 30 60z" fill="#e8952e"/></svg>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Jalebi</h3>
+                <p class="product-price">₹240 <span>/ 500g</span></p>
+                <button class="btn btn-outline btn-sm btn-block">Add to Cart</button>
+              </div>
+            </article>
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><rect x="28" y="32" width="44" height="36" fill="#c98a3c"/></svg>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Badam Barfi</h3>
+                <p class="product-price">₹680 <span>/ 250g</span></p>
+                <button class="btn btn-outline btn-sm btn-block">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Saved Address / Invoices + Loyalty split -->
+        <div class="account-split">
+          <div class="dash-panel">
+            <div class="dash-panel-heading">
+              <h2>Saved Address</h2>
+              <a href="saved-addresses.html" class="view-all">Manage</a>
+            </div>
+            <div class="mini-list">
+              <div class="mini-list-item">
+                <div>
+                  <strong>Home</strong>
+                  <span>21, Ram Nagar 3rd Street, RS Puram, Coimbatore</span>
+                </div>
+              </div>
+              <div class="mini-list-item">
+                <div>
+                  <strong>Office</strong>
+                  <span>Tidel Park, 4th Floor, Coimbatore</span>
+                </div>
+              </div>
+            </div>
+            <a href="saved-addresses.html" class="btn btn-outline btn-sm" style="margin-top:var(--space-4);">+ Add New Address</a>
+          </div>
+
+          <div class="dash-panel">
+            <div class="dash-panel-heading">
+              <h2>Invoices</h2>
+              <a href="order-history.html" class="view-all">View All</a>
+            </div>
+            <div class="mini-list">
+              <div class="mini-list-item">
+                <div><strong>INV-47245</strong><span>10 May 2026</span></div>
+                <span>₹3,123</span>
+              </div>
+              <div class="mini-list-item">
+                <div><strong>INV-47244</strong><span>8 May 2026</span></div>
+                <span>₹720</span>
+              </div>
+              <div class="mini-list-item">
+                <div><strong>INV-47243</strong><span>3 May 2026</span></div>
+                <span>₹1,860</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loyalty Points + Referral -->
+        <div class="account-split">
+          <div class="loyalty-card">
+            <p style="margin-bottom:0; color:var(--color-text-on-maroon);">Loyalty Points</p>
+            <p class="loyalty-points">1,250</p>
+            <p>Earn 1 point for every ₹10 spent. Redeem points for discounts on your next order.</p>
+            <a href="loyalty.html" class="btn btn-outline-light">Explore Rewards</a>
+          </div>
+
+          <div class="dash-panel">
+            <div class="dash-panel-heading">
+              <h2>Referral Program</h2>
+            </div>
+            <p style="font-size:var(--fs-small); color:var(--color-text-muted);">Invite your friends and earn ₹500 when they place their first order.</p>
+            <div class="referral-box">
+              <span class="referral-code">SWEET-DEEPAK12</span>
+              <button class="btn btn-outline btn-sm">Copy</button>
+            </div>
+            <p class="stat-label" style="margin-top:var(--space-3);">12 friends invited &middot; ₹600 earned</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+        <p>Bringing sweetness to your life with authentic, handcrafted mithai made from the finest ingredients. Every box tells a story of tradition and love.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a4 4 0 00-4 4v2H9v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html">Our Sweets</a></li>
+          <li><a href="gift-boxes.html">Gift Boxes</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="track-order.html">Track Order</a></li>
+          <li><a href="returns.html">Return &amp; Refund</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="corporate-orders.html">Corporate Orders</a></li>
+          <li><a href="gift-boxes.html">Wedding Gifting</a></li>
+          <li><a href="franchise.html">Franchise Opportunities</a></li>
+          <li><a href="store-locator.html">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:var(--fs-small); margin-bottom:var(--space-3);">Subscribe for sweet offers &amp; updates.</p>
+        <input type="email" placeholder="Your email address">
+        <button class="btn btn-primary btn-block">Subscribe</button>
+        <div class="footer-app-badges">
+          <img src="images/badge-google-play.svg" alt="Get it on Google Play">
+          <img src="images/badge-app-store.svg" alt="Download on the App Store">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Moments. All Rights Reserved.</p>
+      <div class="footer-payments">
+        <img src="images/pay-visa.svg" alt="Visa">
+        <img src="images/pay-mastercard.svg" alt="Mastercard">
+        <img src="images/pay-rupay.svg" alt="RuPay">
+        <img src="images/pay-upi.svg" alt="UPI">
+      </div>
+      <div class="flex gap-3">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/account.js"></script>
+</body>
+</html>

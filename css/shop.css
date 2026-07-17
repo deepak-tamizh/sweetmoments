@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Sweet Moments — Shop / Sweets Listing Page
+   Mobile-first
+   ========================================================================== */
+
+.breadcrumb {
+  padding: var(--space-4) 0;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+.breadcrumb a { color: var(--color-maroon-800); font-weight: 600; }
+.breadcrumb span { margin: 0 6px; }
+
+.page-heading { padding: var(--space-3) 0 var(--space-6); }
+.page-heading h1 { margin-bottom: var(--space-2); }
+.page-heading p { color: var(--color-text-muted); font-size: var(--fs-small); max-width: 560px; }
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+}
+@media (min-width: 900px) {
+  .shop-layout { grid-template-columns: 260px 1fr; align-items: start; }
+}
+
+/* ---------- Toolbar ---------- */
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+.shop-result-count { font-size: var(--fs-small); color: var(--color-text-muted); }
+
+.shop-toolbar-right { display: flex; align-items: center; gap: var(--space-3); }
+
+.filter-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+.filter-toggle-btn svg { width: 16px; height: 16px; }
+@media (min-width: 900px) { .filter-toggle-btn { display: none; } }
+
+.sort-select {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-cream-100);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+/* ---------- Filters sidebar ---------- */
+.filters-panel {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.filter-group { margin-bottom: var(--space-6); }
+.filter-group:last-child { margin-bottom: 0; }
+.filter-group h3 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+.filter-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-small);
+  color: var(--color-text-body);
+  padding: 6px 0;
+  cursor: pointer;
+}
+.filter-check input {
+  width: 18px; height: 18px;
+  accent-color: var(--color-maroon-800);
+}
+.filter-count { margin-left: auto; color: var(--color-text-muted); font-size: var(--fs-xs); }
+
+.price-range-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-small);
+}
+.price-range-row input[type="range"] { width: 100%; accent-color: var(--color-maroon-800); }
+
+.filter-apply-btn { width: 100%; margin-top: var(--space-2); }
+
+/* Mobile filter drawer (reuses mobile-nav drawer visual pattern) */
+@media (max-width: 899px) {
+  .filters-panel {
+    position: fixed;
+    top: 0; right: 0;
+    width: 86%;
+    max-width: 340px;
+    height: 100%;
+    z-index: var(--z-overlay);
+    border-radius: 0;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+  }
+  .filters-panel[data-open="true"] { transform: translateX(0); }
+}
+
+.filters-backdrop {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(36,16,9,0.5);
+  z-index: calc(var(--z-overlay) - 1);
+}
+.filters-backdrop[data-open="true"] { display: block; }
+@media (min-width: 900px) { .filters-backdrop { display: none !important; } }
+
+.filters-panel-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+@media (max-width: 899px) { .filters-panel-header { display: flex; } }
+
+/* ---------- Product grid ---------- */
+.shop-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 640px) { .shop-product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1280px) { .shop-product-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- Pagination ---------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-7);
+}
+.page-btn {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  border: 1px solid transparent;
+}
+.page-btn:hover { border-color: var(--color-border); }
+.page-btn.active { background: var(--color-maroon-900); color: var(--color-text-on-maroon); }
+.page-btn svg { width: 16px; height: 16px; }

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Moments | Authentic Indian Sweets &amp; Mithai</title>
+<meta name="description" content="Handcrafted Indian sweets made with tradition and love. Shop mithai, gift boxes and festival specials from Sweet Moments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- ===== HEADER (partials/header.html) ===== -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>100% Pure &amp; Fresh</span>
+      <span>Handcrafted with Love</span>
+      <span>Delivery Across India</span>
+    </div>
+    <div class="topbar-right">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/>
+        <path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/>
+      </svg>
+      <span>Sweet Moments</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="gift-boxes.html">Gift Boxes</a></li>
+        <li><a href="festival-specials.html">Festival Specials</a></li>
+        <li><a href="corporate-orders.html">Corporate Orders</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn hide-mobile" href="account.html" aria-label="My account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">3</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" data-search-bar>
+    <div class="container">
+      <input type="search" placeholder="Search for sweets, gift boxes..." aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav data-open="false">
+  <div class="mobile-nav-backdrop" data-mobile-nav-backdrop></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+      <button class="mobile-nav-close" data-mobile-nav-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="sweets.html">Sweets</a></li>
+      <li><a href="gift-boxes.html">Gift Boxes</a></li>
+      <li><a href="festival-specials.html">Festival Specials</a></li>
+      <li><a href="corporate-orders.html">Corporate Orders</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="account.html">My Account</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+<!-- ===== /HEADER ===== -->
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.6H19l-4.6 3.4 1.8 5.6L12 13.2 7.8 16.6l1.8-5.6L5 7.6h5.2z"/></svg>
+          Crafting Sweet Memories
+        </span>
+        <h1>Made with Tradition,<span class="accent">Savored with Love</span></h1>
+        <p>Authentic Indian sweets made from pure ingredients, crafted to bring happiness to every celebration.</p>
+        <div class="hero-actions">
+          <a href="sweets.html" class="btn btn-primary">Shop Now</a>
+          <a href="order-online.html" class="btn btn-outline-light">Order Online</a>
+          <a href="sweets.html" class="btn btn-outline-light">View Menu</a>
+          <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <rect x="230" y="90" width="220" height="150" rx="10" fill="#7a2d12"/>
+          <path d="M230 100 L340 20 L450 100 Z" fill="#93381a"/>
+          <rect x="248" y="112" width="184" height="112" rx="6" fill="#3a1408"/>
+          <g>
+            <circle cx="272" cy="140" r="14" fill="#f3c76a"/>
+            <circle cx="304" cy="140" r="14" fill="#e2a24e"/>
+            <circle cx="336" cy="140" r="14" fill="#8a5a2b"/>
+            <circle cx="368" cy="140" r="14" fill="#f6efe0"/>
+            <circle cx="400" cy="140" r="14" fill="#f3c76a"/>
+            <circle cx="272" cy="172" r="14" fill="#e2a24e"/>
+            <circle cx="304" cy="172" r="14" fill="#f6efe0"/>
+            <circle cx="336" cy="172" r="14" fill="#f3c76a"/>
+            <circle cx="368" cy="172" r="14" fill="#8a5a2b"/>
+            <circle cx="400" cy="172" r="14" fill="#e2a24e"/>
+            <circle cx="272" cy="204" r="14" fill="#f6efe0"/>
+            <circle cx="304" cy="204" r="14" fill="#f3c76a"/>
+            <circle cx="336" cy="204" r="14" fill="#e2a24e"/>
+            <circle cx="368" cy="204" r="14" fill="#f6efe0"/>
+            <circle cx="400" cy="204" r="14" fill="#8a5a2b"/>
+          </g>
+          <ellipse cx="120" cy="270" rx="110" ry="22" fill="#2a0d06" opacity="0.4"/>
+          <ellipse cx="120" cy="258" rx="105" ry="34" fill="#f4ede2"/>
+          <circle cx="80" cy="248" r="20" fill="#e8b04a"/>
+          <circle cx="120" cy="240" r="20" fill="#eec06a"/>
+          <circle cx="160" cy="250" r="20" fill="#e29c3c"/>
+          <circle cx="100" cy="266" r="20" fill="#f0c988"/>
+          <circle cx="142" cy="268" r="20" fill="#dc9a3a"/>
+          <rect x="205" y="220" width="6" height="30" fill="#c98a3c"/>
+          <ellipse cx="208" cy="215" rx="16" ry="8" fill="#8a4a12"/>
+          <path d="M208 200 q6 -18 0 -28 q-6 10 0 28z" fill="#f6c94a"/>
+          <path d="M208 205 q3 -8 0 -14 q-3 4 0 14z" fill="#fff3c2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="hero-trust">
+    <div class="container">
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+        Pure Ingredients, No Additives
+      </div>
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+        Hygienic &amp; Fresh Daily
+      </div>
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M12 3v18"/><path d="M3 12a9 9 0 0118 0"/></svg>
+        Premium Gift Packaging
+      </div>
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        Fast &amp; Reliable Delivery
+      </div>
+    </div>
+  </section>
+
+  <!--
+    REMAINING HOME PAGE SECTIONS — built in upcoming sessions:
+    Session 4: About strip + Why Choose Us + Featured Gift Boxes
+    Session 5: Reviews + Gallery + Store Locator + Instagram + Newsletter
+  -->
+
+  <!-- ===== SHOP BY CATEGORY ===== -->
+  <section class="section section-categories">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Shop by Category</h2>
+      </div>
+      <div class="category-scroller">
+        <a class="category-item" href="sweets.html?cat=traditional">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="10" fill="#e8b04a"/><circle cx="24" cy="24" r="4" fill="#8a5a2b"/></svg></span>
+          Traditional Sweets
+        </a>
+        <a class="category-item" href="sweets.html?cat=bengali">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="18" cy="24" r="9" fill="#f6efe0"/><circle cx="30" cy="24" r="9" fill="#f6efe0"/></svg></span>
+          Bengali Sweets
+        </a>
+        <a class="category-item" href="sweets.html?cat=milk">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="11" fill="#fff7e8"/><circle cx="24" cy="24" r="5" fill="#eec06a"/></svg></span>
+          Milk Sweets
+        </a>
+        <a class="category-item" href="sweets.html?cat=dryfruit">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="18" cy="20" r="6" fill="#8a5a2b"/><circle cx="30" cy="20" r="6" fill="#c98a3c"/><circle cx="24" cy="30" r="6" fill="#e8b04a"/></svg></span>
+          Dry Fruit Sweets
+        </a>
+        <a class="category-item" href="sweets.html?cat=sugarfree">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="11" fill="#f0e4d0"/><path d="M17 24h14M24 17v14" stroke="#3f8b4c" stroke-width="2"/></svg></span>
+          Sugar-Free Sweets
+        </a>
+        <a class="category-item" href="festival-specials.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><path d="M24 12l3 8h8l-6.5 5 2.5 8-7-5-7 5 2.5-8L13 20h8z" fill="#e29c3c"/></svg></span>
+          Festival Specials
+        </a>
+        <a class="category-item" href="gift-boxes.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><rect x="14" y="20" width="20" height="14" fill="#b23b3b"/><rect x="14" y="20" width="20" height="4" fill="#8c1f26"/><rect x="22" y="14" width="4" height="20" fill="#e8b04a"/></svg></span>
+          Gift Boxes
+        </a>
+        <a class="category-item" href="snacks.html?cat=namkeen">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><circle cx="20" cy="22" r="3" fill="#c98a3c"/><circle cx="28" cy="20" r="3" fill="#e2a24e"/><circle cx="24" cy="28" r="3" fill="#8a5a2b"/><circle cx="18" cy="30" r="3" fill="#e8b04a"/><circle cx="30" cy="30" r="3" fill="#c98a3c"/></svg></span>
+          Namkeen
+        </a>
+        <a class="category-item" href="snacks.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><rect x="15" y="16" width="18" height="16" rx="3" fill="#e2a24e"/></svg></span>
+          Snacks
+        </a>
+        <a class="category-item" href="bakery.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><path d="M14 26c0-6 4-10 10-10s10 4 10 10z" fill="#c98a3c"/><rect x="14" y="26" width="20" height="4" fill="#8a5a2b"/></svg></span>
+          Bakery Items
+        </a>
+        <a class="category-item" href="chocolates.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><rect x="15" y="15" width="18" height="18" rx="2" fill="#5a3418"/><path d="M15 24h18M24 15v18" stroke="#3a2110" stroke-width="1.5"/></svg></span>
+          Chocolates
+        </a>
+        <a class="category-item" href="beverages.html">
+          <span class="category-circle"><svg viewBox="0 0 48 48"><path d="M18 16h12l-2 18a3 3 0 01-3 3h-2a3 3 0 01-3-3z" fill="#c98a3c"/></svg></span>
+          Beverages
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEST SELLERS + FESTIVAL SPECIALS ===== -->
+  <section class="section section-band">
+    <div class="container">
+      <div class="split-panels">
+
+        <!-- Best Sellers -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Best Sellers</h2>
+            <a href="sweets.html?filter=bestsellers" class="view-all">View All</a>
+          </div>
+          <div class="grid grid-sm-3 grid-lg-4 product-grid">
+
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 65,58 75,90 50,70 25,90 35,58 10,40 40,40" fill="#f0c988"/></svg>
+                <button class="wishlist-btn" aria-label="Add Kaju Katli to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Kaju Katli</h3>
+                <div class="stars" aria-label="4.8 out of 5 stars">★★★★★ <span class="rating-count">(4.8)</span></div>
+                <p class="product-price">₹720 <span>/ 250g</span></p>
+                <div class="product-actions">
+                  <button class="icon-action" aria-label="Quick view Kaju Katli">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                  <button class="icon-action icon-action-solid" aria-label="Add Kaju Katli to cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><circle cx="35" cy="55" r="18" fill="#7a3418"/><circle cx="60" cy="45" r="18" fill="#8a4020"/><circle cx="65" cy="68" r="14" fill="#7a3418"/></svg>
+                <button class="wishlist-btn" aria-label="Add Gulab Jamun to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Gulab Jamun</h3>
+                <div class="stars" aria-label="4.7 out of 5 stars">★★★★★ <span class="rating-count">(4.7)</span></div>
+                <p class="product-price">₹320 <span>/ 500g</span></p>
+                <div class="product-actions">
+                  <button class="icon-action" aria-label="Quick view Gulab Jamun">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                  <button class="icon-action icon-action-solid" aria-label="Add Gulab Jamun to cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><circle cx="38" cy="50" r="20" fill="#f6efe0"/><circle cx="66" cy="55" r="16" fill="#fdfaf3"/></svg>
+                <button class="wishlist-btn" aria-label="Add Rasgulla to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Rasgulla</h3>
+                <div class="stars" aria-label="4.6 out of 5 stars">★★★★★ <span class="rating-count">(4.6)</span></div>
+                <p class="product-price">₹280 <span>/ 500g</span></p>
+                <div class="product-actions">
+                  <button class="icon-action" aria-label="Quick view Rasgulla">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                  <button class="icon-action icon-action-solid" aria-label="Add Rasgulla to cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card">
+              <div class="product-thumb">
+                <svg viewBox="0 0 100 100"><circle cx="35" cy="45" r="16" fill="#e8952e"/><circle cx="60" cy="40" r="16" fill="#ec9f3c"/><circle cx="50" cy="65" r="16" fill="#e8952e"/></svg>
+                <button class="wishlist-btn" aria-label="Add Motichoor Ladoo to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <h3 class="product-title">Motichoor Ladoo</h3>
+                <div class="stars" aria-label="4.8 out of 5 stars">★★★★★ <span class="rating-count">(4.8)</span></div>
+                <p class="product-price">₹360 <span>/ 500g</span></p>
+                <div class="product-actions">
+                  <button class="icon-action" aria-label="Quick view Motichoor Ladoo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                  <button class="icon-action icon-action-solid" aria-label="Add Motichoor Ladoo to cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Festival Specials -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Festival Specials</h2>
+            <a href="festival-specials.html" class="view-all">View All</a>
+          </div>
+          <div class="festival-scroller">
+            <a class="festival-card festival-diwali" href="festival-specials.html?fest=diwali">
+              <span class="festival-label">Diwali Collection</span>
+            </a>
+            <a class="festival-card festival-raksha" href="festival-specials.html?fest=raksha-bandhan">
+              <span class="festival-label">Raksha Bandhan</span>
+            </a>
+            <a class="festival-card festival-pongal" href="festival-specials.html?fest=pongal">
+              <span class="festival-label">Pongal Special</span>
+            </a>
+            <a class="festival-card festival-eid" href="festival-specials.html?fest=eid">
+              <span class="festival-label">Eid Mubarak</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STRIP + WHY CHOOSE US ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="split-panels about-why-split">
+
+        <!-- About Sweet Moments -->
+        <div class="about-panel">
+          <div class="about-photo" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#f4ece3"/><ellipse cx="100" cy="150" rx="70" ry="14" fill="#3a1408" opacity="0.15"/><circle cx="70" cy="120" r="26" fill="#e8952e"/><circle cx="110" cy="110" r="26" fill="#ec9f3c"/><circle cx="135" cy="130" r="22" fill="#c98a3c"/><circle cx="90" cy="140" r="22" fill="#f0c988"/></svg>
+          </div>
+          <div class="about-content">
+            <span class="eyebrow">About Us</span>
+            <h2>About Sweet Moments</h2>
+            <p>For over 25 years, Sweet Moments has been spreading joy with authentic, handcrafted sweets made from the finest ingredients. Rooted in tradition, perfect in taste.</p>
+            <ul class="about-badges">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>25+ Years of Heritage</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>100% Pure Ingredients</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg>Handmade with Love</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="why-panel">
+          <h2>Why Choose Us</h2>
+          <div class="why-grid">
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3c-3 2-3 5-1 7-2 1-3 4-1 6 2 2 6 2 8 0 3-3 2-8-2-11-1 1-2 2-1 3-1-1-2-3-3-5z"/></svg></span>
+              <p>Pure Ghee<br>No Dalda</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+              <p>Fresh Daily<br>Made in Small Batches</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span>
+              <p>Hygienic<br>Kitchen Environment</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z"/></svg></span>
+              <p>Premium<br>Ingredients Only</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19h16M6 19V9l6-4 6 4v10M10 19v-6h4v6"/></svg></span>
+              <p>Traditional Recipes<br>Passed Down</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 16V7h11v9M14 10h4l3 3v3h-7"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="17.5" cy="16.5" r="1.8"/></svg></span>
+              <p>Fast Delivery<br>Pan India</p>
+            </div>
+            <div class="why-item">
+              <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <p>Custom Orders<br>Available</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED GIFT BOXES ===== -->
+  <section class="section section-band">
+    <div class="container">
+      <div class="panel-heading">
+        <h2>Featured Gift Boxes</h2>
+        <a href="gift-boxes.html" class="view-all">View All</a>
+      </div>
+      <div class="grid grid-sm-2 grid-md-4 giftbox-grid">
+
+        <a class="card giftbox-card" href="gift-boxes.html?box=corporate">
+          <div class="product-thumb">
+            <svg viewBox="0 0 100 100"><rect x="20" y="30" width="60" height="45" fill="#8c1f26"/><rect x="20" y="30" width="60" height="10" fill="#6a151d"/><rect x="45" y="18" width="10" height="57" fill="#ecc178"/></svg>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Corporate Gift Box</h3>
+            <p class="product-price">₹1,450</p>
+          </div>
+        </a>
+
+        <a class="card giftbox-card" href="gift-boxes.html?box=wedding">
+          <div class="product-thumb">
+            <svg viewBox="0 0 100 100"><rect x="18" y="28" width="64" height="48" fill="#b23b3b"/><rect x="18" y="28" width="64" height="10" fill="#8c1f26"/><circle cx="50" cy="52" r="10" fill="#ecc178"/></svg>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Wedding Gift Box</h3>
+            <p class="product-price">₹2,250</p>
+          </div>
+        </a>
+
+        <a class="card giftbox-card" href="gift-boxes.html?box=festive">
+          <div class="product-thumb">
+            <svg viewBox="0 0 100 100"><rect x="20" y="30" width="60" height="45" fill="#c98a3c"/><rect x="20" y="30" width="60" height="10" fill="#a06a26"/><rect x="45" y="18" width="10" height="57" fill="#7a3418"/></svg>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Festive Gift Box</h3>
+            <p class="product-price">₹1,750</p>
+          </div>
+        </a>
+
+        <a class="card giftbox-card" href="gift-boxes.html?box=luxury">
+          <div class="product-thumb">
+            <svg viewBox="0 0 100 100"><rect x="20" y="26" width="60" height="50" fill="#3a1408"/><rect x="20" y="26" width="60" height="10" fill="#241009"/><rect x="45" y="14" width="10" height="62" fill="#ecc178"/></svg>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Luxury Collection</h3>
+            <p class="product-price">₹3,250</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOMER REVIEWS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="panel-heading">
+        <h2>Customer Reviews</h2>
+        <a href="reviews.html" class="view-all">View All</a>
+      </div>
+      <div class="grid grid-sm-2 grid-md-4 reviews-grid">
+
+        <div class="card review-summary">
+          <svg class="google-logo" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.85A11 11 0 0012 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09A6.6 6.6 0 015.5 12c0-.73.13-1.43.34-2.09V7.06H2.18A11 11 0 001 12c0 1.77.42 3.45 1.18 4.94l3.66-2.85z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.85C6.71 7.31 9.14 5.38 12 5.38z"/>
+          </svg>
+          <p class="review-score">4.8</p>
+          <div class="stars" aria-label="4.8 out of 5">★★★★★</div>
+          <p class="review-meta">Google Reviews<br>(2,346 Reviews)</p>
+        </div>
+
+        <article class="card testimonial-card">
+          <div class="testimonial-head">
+            <span class="avatar" style="background:#e2a24e">PS</span>
+            <div>
+              <h3 class="product-title">Priya Sharma</h3>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">The best sweets I've ever had! Perfect taste, freshness and beautiful packaging.</p>
+          <div class="testimonial-photo"><svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="35" cy="34" r="14" fill="#f6efe0"/><circle cx="60" cy="30" r="14" fill="#f0c988"/></svg></div>
+        </article>
+
+        <article class="card testimonial-card">
+          <div class="testimonial-head">
+            <span class="avatar" style="background:#8a5a2b">RV</span>
+            <div>
+              <h3 class="product-title">Rahul Verma</h3>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">Ordered for Diwali. Amazing quality and delivered on time. Highly recommended!</p>
+          <div class="testimonial-photo"><svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="40" cy="30" r="16" fill="#e8952e"/><circle cx="68" cy="34" r="12" fill="#c98a3c"/></svg></div>
+        </article>
+
+        <article class="card testimonial-card">
+          <div class="testimonial-head">
+            <span class="avatar" style="background:#c98a3c">AI</span>
+            <div>
+              <h3 class="product-title">Ananya Iyer</h3>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">Love their Kaju Katli and Rasgulla. Truly authentic and delicious!</p>
+          <div class="testimonial-photo"><svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="38" cy="32" r="15" fill="#f6efe0"/><circle cx="64" cy="30" r="13" fill="#eec06a"/></svg></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORE LOCATOR + GALLERY PREVIEW ===== -->
+  <section class="section section-band">
+    <div class="container">
+      <div class="split-panels store-gallery-split">
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Store Locations</h2>
+            <a href="store-locator.html" class="view-all">View All</a>
+          </div>
+          <ul class="store-list">
+            <li class="store-item">
+              <span class="store-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.5-7-12a7 7 0 0114 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div>
+                <h3 class="product-title">Coimbatore Main Store</h3>
+                <p class="store-meta">123 Brookefields Road, RS Puram, Coimbatore – 641002</p>
+                <p class="store-meta">Open today: 9:00 AM – 9:30 PM</p>
+                <a href="store-locator.html#coimbatore" class="btn btn-outline btn-sm">Get Directions</a>
+              </div>
+            </li>
+            <li class="store-item">
+              <span class="store-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.5-7-12a7 7 0 0114 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div>
+                <h3 class="product-title">Gandhipuram Outlet</h3>
+                <p class="store-meta">45 Cross Cut Road, Gandhipuram, Coimbatore – 641012</p>
+                <p class="store-meta">Open today: 9:00 AM – 9:00 PM</p>
+                <a href="store-locator.html#gandhipuram" class="btn btn-outline btn-sm">Get Directions</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Gallery Preview</h2>
+            <a href="gallery.html" class="view-all">View All</a>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item" style="background:linear-gradient(160deg,#e8952e,#c98a3c)"></div>
+            <div class="gallery-item" style="background:linear-gradient(160deg,#f6efe0,#e2a24e)"></div>
+            <div class="gallery-item" style="background:linear-gradient(160deg,#7a3418,#3a1408)"></div>
+            <div class="gallery-item" style="background:linear-gradient(160deg,#ecc178,#8a5a2b)"></div>
+            <div class="gallery-item" style="background:linear-gradient(160deg,#b23b3b,#6a151d)"></div>
+            <div class="gallery-item" style="background:linear-gradient(160deg,#f0c988,#e8952e)"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTAGRAM FEED + NEWSLETTER ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="split-panels insta-newsletter-split">
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Instagram Feed</h2>
+            <a href="https://instagram.com" class="view-all">Follow Us</a>
+          </div>
+          <div class="insta-grid">
+            <div class="insta-item" style="background:linear-gradient(160deg,#e2a24e,#8a5a2b)"></div>
+            <div class="insta-item" style="background:linear-gradient(160deg,#f6efe0,#c98a3c)"></div>
+            <div class="insta-item" style="background:linear-gradient(160deg,#8c1f26,#4a0810)"></div>
+            <div class="insta-item" style="background:linear-gradient(160deg,#ecc178,#e8952e)"></div>
+            <div class="insta-item" style="background:linear-gradient(160deg,#7a3418,#3a1408)"></div>
+            <div class="insta-item" style="background:linear-gradient(160deg,#f0c988,#c98a3c)"></div>
+          </div>
+        </div>
+
+        <div class="panel newsletter-panel">
+          <h2>Stay Updated</h2>
+          <p>Subscribe for exclusive offers, new arrivals and festival specials straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <div class="field">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input id="newsletter-email" type="email" placeholder="Your email address" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+          </form>
+          <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER (partials/footer.html) ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+        <p>Bringing sweetness to your life with authentic, handcrafted mithai made from the finest ingredients. Every box tells a story of tradition and love.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a4 4 0 00-4 4v2H9v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html">Our Sweets</a></li>
+          <li><a href="gift-boxes.html">Gift Boxes</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="track-order.html">Track Order</a></li>
+          <li><a href="returns.html">Return &amp; Refund</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="corporate-orders.html">Corporate Orders</a></li>
+          <li><a href="gift-boxes.html">Wedding Gifting</a></li>
+          <li><a href="franchise.html">Franchise Opportunities</a></li>
+          <li><a href="store-locator.html">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:var(--fs-small); margin-bottom:var(--space-3);">Subscribe for sweet offers &amp; updates.</p>
+        <input type="email" placeholder="Your email address">
+        <button class="btn btn-primary btn-block">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Moments. All Rights Reserved.</p>
+      <div class="flex gap-3">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Sweet Moments — Reusable Components
+   ========================================================================== */
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 12px 24px;
+  min-height: 44px; /* touch target */
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  white-space: nowrap;
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--color-gold-500);
+  color: var(--color-gold-700);
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover { background: var(--color-gold-600); box-shadow: var(--shadow-md); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-maroon-900);
+  border: 1.5px solid var(--color-maroon-900);
+}
+.btn-outline:hover { background: var(--color-maroon-900); color: var(--color-text-on-maroon); }
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--color-text-on-maroon);
+  border: 1.5px solid rgba(246, 233, 227, 0.55);
+}
+.btn-outline-light:hover { background: rgba(246, 233, 227, 0.12); }
+
+.btn-dark {
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon);
+}
+.btn-dark:hover { background: var(--color-maroon-accent); }
+
+.btn-block { width: 100%; }
+.btn-sm { min-height: 36px; padding: 8px 16px; font-size: var(--fs-xs); }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.card-body { padding: var(--space-4); }
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-gold-100);
+  color: var(--color-gold-700);
+}
+.badge-outline {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+
+/* ---------- Star rating ---------- */
+.stars { color: var(--color-gold-600); font-size: var(--fs-small); letter-spacing: 1px; }
+
+/* ---------- Forms ---------- */
+.field { margin-bottom: var(--space-4); }
+
+.field label {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-cream-100);
+  font-size: var(--fs-body);
+  transition: border-color var(--transition-fast);
+}
+
+.field textarea { min-height: 96px; resize: vertical; }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color-maroon-800);
+}
+
+.field-row {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .field-row.cols-2 { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Grid utilities ---------- */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 640px)  { .grid-sm-3 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 768px)  { .grid-md-4 { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1024px) { .grid-lg-5 { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 1024px) { .grid-lg-6 { grid-template-columns: repeat(6, 1fr); } }
+
+/* ---------- Utility ---------- */
+.text-center { text-align: center; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.mt-0 { margin-top: 0; }
+.hidden { display: none !important; }
+
+@media (max-width: 767px) {
+  .hide-mobile { display: none !important; }
+}
+@media (min-width: 768px) {
+  .show-mobile-only { display: none !important; }
+}

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Sweet Moments — Contact Page
+   Mobile-first
+   ========================================================================== */
+
+.contact-hero {
+  background: linear-gradient(115deg, #2b0d09 0%, #5c1b0c 60%, #7a2d12 100%);
+  color: var(--color-text-on-maroon);
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+.contact-hero h1 { color: var(--color-text-on-maroon); margin-bottom: var(--space-2); }
+.contact-hero p { color: var(--color-text-on-maroon-muted); max-width: 480px; margin: 0 auto; }
+
+/* ---------- Contact info cards ---------- */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 700px) { .contact-info-grid { grid-template-columns: repeat(4, 1fr); } }
+.contact-info-card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-3);
+  text-align: center;
+}
+.contact-info-icon {
+  width: 52px; height: 52px;
+  margin: 0 auto var(--space-3);
+  border-radius: 50%;
+  background: var(--color-gold-100);
+  color: var(--color-maroon-800);
+  display: flex; align-items: center; justify-content: center;
+}
+.contact-info-icon svg { width: 24px; height: 24px; }
+.contact-info-card h3 { font-size: 0.9rem; margin-bottom: 4px; font-family: var(--font-body); }
+.contact-info-card p { font-size: var(--fs-xs); color: var(--color-text-muted); margin: 0; }
+.contact-info-card a { color: var(--color-maroon-800); font-weight: 600; }
+
+/* ---------- Form + map split ---------- */
+.contact-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+@media (min-width: 960px) { .contact-split { grid-template-columns: 1fr 1fr; } }
+
+.contact-form-panel {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.contact-map {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-100));
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+.contact-map svg { width: 55%; }
+
+/* ---------- Store list (reused pattern) ---------- */
+.contact-stores { margin-top: var(--space-5); }

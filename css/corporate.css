@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Sweet Moments — Corporate Orders Page
+   Mobile-first
+   ========================================================================== */
+
+.corp-hero {
+  background: linear-gradient(115deg, #2b0d09 0%, #5c1b0c 60%, #7a2d12 100%);
+  color: var(--color-text-on-maroon);
+  padding: var(--space-8) 0;
+}
+.corp-hero .container {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media (min-width: 900px) { .corp-hero .container { grid-template-columns: 1.1fr 0.9fr; } }
+.corp-hero h1 { color: var(--color-text-on-maroon); margin-bottom: var(--space-3); }
+.corp-hero p { color: var(--color-text-on-maroon-muted); max-width: 460px; margin-bottom: var(--space-5); }
+.corp-hero-visual { display: flex; justify-content: center; }
+.corp-hero-visual svg { width: 100%; max-width: 340px; }
+@media (max-width: 899px) { .corp-hero-visual { display: none; } }
+
+.corp-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+@media (min-width: 560px) { .corp-stats { grid-template-columns: repeat(4, 1fr); } }
+.corp-stat strong { display: block; font-family: var(--font-display); font-size: 1.5rem; color: var(--color-gold-500); }
+.corp-stat span { font-size: var(--fs-xs); color: var(--color-text-on-maroon-muted); }
+
+/* ---------- Use cases ---------- */
+.corp-usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 700px) { .corp-usecase-grid { grid-template-columns: repeat(4, 1fr); } }
+.corp-usecase-card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-3);
+  text-align: center;
+}
+.corp-usecase-icon {
+  width: 52px; height: 52px;
+  margin: 0 auto var(--space-3);
+  border-radius: 50%;
+  background: var(--color-gold-100);
+  color: var(--color-maroon-800);
+  display: flex; align-items: center; justify-content: center;
+}
+.corp-usecase-icon svg { width: 24px; height: 24px; }
+.corp-usecase-card h3 { font-size: 0.9rem; margin-bottom: 4px; font-family: var(--font-body); }
+.corp-usecase-card p { font-size: var(--fs-xs); color: var(--color-text-muted); margin: 0; }
+
+/* ---------- Package tiers ---------- */
+.corp-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+@media (min-width: 700px) { .corp-tiers { grid-template-columns: repeat(3, 1fr); } }
+.corp-tier-card {
+  background: var(--color-cream-200);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  position: relative;
+}
+.corp-tier-card.featured { border-color: var(--color-gold-600); box-shadow: var(--shadow-md); }
+.corp-tier-badge {
+  position: absolute;
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-gold-500);
+  color: var(--color-gold-700);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.corp-tier-card h3 { font-size: 1rem; margin-bottom: var(--space-2); }
+.corp-tier-price { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; margin-bottom: var(--space-4); }
+.corp-tier-price span { font-size: var(--fs-xs); font-weight: 400; color: var(--color-text-muted); }
+.corp-tier-features { text-align: left; display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-5); }
+.corp-tier-features div { display: flex; gap: var(--space-2); font-size: var(--fs-small); align-items: flex-start; }
+.corp-tier-features svg { width: 16px; height: 16px; color: var(--color-success); flex-shrink: 0; margin-top: 3px; }
+
+/* ---------- Client logos / testimonials ---------- */
+.corp-logo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  opacity: 0.75;
+}
+@media (min-width: 700px) { .corp-logo-strip { grid-template-columns: repeat(6, 1fr); } }
+.corp-logo-item {
+  aspect-ratio: 3/2;
+  background: var(--color-cream-300);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}

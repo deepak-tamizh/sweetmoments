@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Sweet Moments — Cart Page
+   Mobile-first
+   ========================================================================== */
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .cart-layout { grid-template-columns: 1fr 360px; }
+}
+
+.cart-items { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.cart-item-thumb {
+  width: 76px; height: 76px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-200));
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cart-item-thumb svg { width: 60%; height: 60%; }
+
+.cart-item-body { min-width: 0; }
+.cart-item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: 4px;
+}
+.cart-item-title { font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; margin: 0; }
+.cart-item-variant { font-size: var(--fs-xs); color: var(--color-text-muted); margin: 0 0 var(--space-3); }
+
+.cart-item-remove {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+.cart-item-remove svg { width: 18px; height: 18px; }
+.cart-item-remove:hover { color: var(--color-danger); }
+
+.cart-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.cart-item-price { font-weight: 700; color: var(--color-text-dark); }
+.cart-item-price .unit { font-weight: 400; color: var(--color-text-muted); font-size: var(--fs-xs); display: block; }
+
+/* Reuse qty-stepper from product.css but smaller here */
+.cart-item .qty-stepper button { width: 32px; height: 32px; font-size: 1rem; }
+.cart-item .qty-stepper span { min-width: 28px; }
+
+.cart-empty {
+  text-align: center;
+  padding: var(--space-9) var(--space-4);
+}
+.cart-empty svg { width: 64px; height: 64px; color: var(--color-border); margin: 0 auto var(--space-4); }
+
+/* ---------- Coupon ---------- */
+.coupon-row {
+  display: flex;
+  gap: var(--space-2);
+  margin: var(--space-5) 0;
+}
+.coupon-row input { flex: 1; }
+
+/* ---------- Order summary ---------- */
+.order-summary {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  position: sticky;
+  top: 80px;
+}
+.order-summary h2 { font-size: var(--fs-h4); margin-bottom: var(--space-4); }
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+  color: var(--color-text-body);
+  padding: 8px 0;
+}
+.summary-row.discount { color: var(--color-success); }
+.summary-row.total {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-2);
+  padding-top: var(--space-4);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.summary-note {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-4);
+}
+
+.trust-mini {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+.trust-mini span {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--color-text-muted); font-weight: 600;
+}
+.trust-mini svg { width: 16px; height: 16px; color: var(--color-maroon-800); }

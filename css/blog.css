@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Sweet Moments — Blog Page
+   Mobile-first
+   ========================================================================== */
+
+.blog-hero {
+  background: linear-gradient(115deg, #3a1408 0%, #6a1f10 100%);
+  color: var(--color-text-on-maroon);
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+.blog-hero h1 { color: var(--color-text-on-maroon); margin-bottom: var(--space-2); }
+.blog-hero p { color: var(--color-text-on-maroon-muted); margin-bottom: var(--space-5); }
+
+.blog-search {
+  max-width: 480px;
+  margin: 0 auto var(--space-5);
+  display: flex;
+  gap: var(--space-2);
+}
+.blog-search input {
+  flex: 1;
+  min-height: 46px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(246,233,227,0.3);
+  background: rgba(255,255,255,0.08);
+  color: var(--color-text-on-maroon);
+}
+.blog-search input::placeholder { color: var(--color-text-on-maroon-muted); }
+
+.blog-cat-pills {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog-cat-pill {
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(246,233,227,0.35);
+  color: var(--color-text-on-maroon-muted);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+.blog-cat-pill.active { background: var(--color-gold-500); border-color: var(--color-gold-500); color: var(--color-gold-700); }
+
+/* ---------- Layout ---------- */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  padding: var(--space-7) 0 var(--space-8);
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .blog-layout { grid-template-columns: 1fr 300px; }
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+@media (min-width: 640px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1200px) { .blog-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.blog-card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card-thumb {
+  aspect-ratio: 16/10;
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-100));
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.blog-card-thumb svg { width: 40%; height: 40%; }
+.blog-card-tag {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+.blog-card-body { padding: var(--space-4); flex: 1; display: flex; flex-direction: column; }
+.blog-card-body h3 { font-size: 1rem; margin-bottom: var(--space-2); }
+.blog-card-body p { font-size: var(--fs-small); color: var(--color-text-muted); flex: 1; margin-bottom: var(--space-3); }
+.blog-card-meta { font-size: var(--fs-xs); color: var(--color-text-muted); display: flex; gap: var(--space-3); }
+
+/* ---------- Sidebar ---------- */
+.blog-sidebar-panel {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+.blog-sidebar-panel h3 { font-size: 0.95rem; margin-bottom: var(--space-4); }
+
+.popular-post { display: flex; gap: var(--space-3); margin-bottom: var(--space-4); }
+.popular-post:last-child { margin-bottom: 0; }
+.popular-post-thumb {
+  width: 56px; height: 56px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-100));
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.popular-post-thumb svg { width: 50%; height: 50%; }
+.popular-post h4 { font-size: 0.8rem; font-weight: 700; margin: 0 0 4px; line-height: 1.35; }
+.popular-post span { font-size: 11px; color: var(--color-text-muted); }
+
+.category-list a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+.category-list a:last-child { border-bottom: none; }
+.category-list span { color: var(--color-text-muted); font-weight: 400; font-size: var(--fs-xs); }
+
+.blog-pagination-wrap { grid-column: 1 / -1; }

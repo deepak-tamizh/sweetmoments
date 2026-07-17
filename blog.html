@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Sweet Moments</title>
+<meta name="description" content="Stories, recipes, festival guides and everything sweet from the Sweet Moments blog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Top utility bar (desktop only) -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>100% Pure &amp; Fresh</span>
+      <span>Handcrafted with Love</span>
+      <span>Delivery Across India</span>
+    </div>
+    <div class="topbar-right">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/>
+        <path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/>
+      </svg>
+      <span>Sweet Moments</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="gift-boxes.html">Gift Boxes</a></li>
+        <li><a href="festival-specials.html">Festival Specials</a></li>
+        <li><a href="corporate-orders.html">Corporate Orders</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn hide-mobile" href="account.html" aria-label="My account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">3</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Expandable search bar -->
+  <div class="search-bar" data-search-bar>
+    <div class="container">
+      <input type="search" placeholder="Search for sweets, gift boxes..." aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav data-open="false">
+  <div class="mobile-nav-backdrop" data-mobile-nav-backdrop></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+      <button class="mobile-nav-close" data-mobile-nav-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="sweets.html">Sweets</a></li>
+      <li><a href="gift-boxes.html">Gift Boxes</a></li>
+      <li><a href="festival-specials.html">Festival Specials</a></li>
+      <li><a href="corporate-orders.html">Corporate Orders</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="account.html">My Account</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>Our Blog</h1>
+      <p>Stories, recipes &amp; everything sweet</p>
+      <div class="blog-search">
+        <input type="search" placeholder="Search articles...">
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <nav class="blog-cat-pills" aria-label="Blog categories">
+        <button class="blog-cat-pill active">All Posts</button>
+        <button class="blog-cat-pill">Festival Events</button>
+        <button class="blog-cat-pill">Sweet Recipes</button>
+        <button class="blog-cat-pill">Healthy Sweets</button>
+        <button class="blog-cat-pill">Traditional Sweets</button>
+      </nav>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- ===== ARTICLE GRID ===== -->
+      <div>
+        <div class="panel-heading">
+          <h2>Latest Articles</h2>
+        </div>
+        <div class="blog-grid">
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Festival Events</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="35" cy="34" r="14" fill="#f6efe0"/><circle cx="60" cy="30" r="14" fill="#f0c988"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>Diwali 2026: 5 Must-Try Festive Sweets</h3>
+              <p>From Kaju Katli to Motichoor Ladoo — here's our pick of the sweets that make Diwali celebrations complete.</p>
+              <div class="blog-card-meta"><span>Oct 12, 2026</span><span>5 min read</span></div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Sweet Recipes</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="40" cy="30" r="16" fill="#e8952e"/><circle cx="68" cy="34" r="12" fill="#c98a3c"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>Besan Ladoo Recipe — Easy &amp; Delicious</h3>
+              <p>Learn how to make soft, melt-in-the-mouth besan ladoo at home with this simple step-by-step recipe.</p>
+              <div class="blog-card-meta"><span>Oct 5, 2026</span><span>4 min read</span></div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Healthy Sweets</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="38" cy="32" r="15" fill="#f6efe0"/><circle cx="64" cy="30" r="13" fill="#eec06a"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>Healthy Sweet Alternatives for Sugar-Free Diets</h3>
+              <p>Craving something sweet without the guilt? Discover our sugar-free mithai range and simple substitutions.</p>
+              <div class="blog-card-meta"><span>Sep 28, 2026</span><span>6 min read</span></div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Traditional Sweets</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><rect x="30" y="15" width="40" height="30" rx="4" fill="#c98a3c"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>The Traditional Benefits of Pure Ghee in Indian Sweets</h3>
+              <p>Why we never compromise on pure ghee — and how it shapes the taste and texture of authentic mithai.</p>
+              <div class="blog-card-meta"><span>Sep 20, 2026</span><span>5 min read</span></div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Sweet Recipes</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><path d="M30 45 Q35 20 50 32 Q65 20 70 45 Q50 55 30 45z" fill="#e8952e"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>Chocolate Barfi Recipe — A Modern Twist</h3>
+              <p>A fusion favourite — classic barfi reimagined with rich cocoa for a modern take on a timeless sweet.</p>
+              <div class="blog-card-meta"><span>Sep 14, 2026</span><span>4 min read</span></div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-thumb">
+              <span class="blog-card-tag">Healthy Sweets</span>
+              <svg viewBox="0 0 100 60"><rect width="100" height="60" fill="#f4ece3"/><circle cx="45" cy="30" r="18" fill="#eec06a"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <h3>Dry Fruit Ladoo — A Healthy Energy Booster</h3>
+              <p>Packed with nuts and dates, our dry fruit ladoo makes a wholesome snack for any time of day.</p>
+              <div class="blog-card-meta"><span>Sep 8, 2026</span><span>3 min read</span></div>
+            </div>
+          </article>
+
+          <div class="blog-pagination-wrap">
+            <nav class="pagination" aria-label="Pagination">
+              <button class="page-btn" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SIDEBAR ===== -->
+      <aside>
+        <div class="blog-sidebar-panel">
+          <h3>Popular Posts</h3>
+          <div class="popular-post">
+            <div class="popular-post-thumb"><svg viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 65,58 75,90 50,70 25,90 35,58 10,40 40,40" fill="#f0c988"/></svg></div>
+            <div><h4>Kaju Katli: The Story Behind India's Favourite Sweet</h4><span>Oct 15, 2026</span></div>
+          </div>
+          <div class="popular-post">
+            <div class="popular-post-thumb"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="#7a3418"/></svg></div>
+            <div><h4>5 Tips to Keep Sweets Fresh Longer</h4><span>Sep 30, 2026</span></div>
+          </div>
+          <div class="popular-post">
+            <div class="popular-post-thumb"><svg viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="8" fill="#8c1f26"/></svg></div>
+            <div><h4>Choosing the Perfect Gift Box for Every Occasion</h4><span>Sep 18, 2026</span></div>
+          </div>
+        </div>
+
+        <div class="blog-sidebar-panel">
+          <h3>Categories</h3>
+          <div class="category-list">
+            <a href="#">Festival Events <span>12</span></a>
+            <a href="#">Sweet Recipes <span>18</span></a>
+            <a href="#">Healthy Sweets <span>9</span></a>
+            <a href="#">Traditional Sweets <span>14</span></a>
+            <a href="#">Ingredient Guides <span>7</span></a>
+          </div>
+        </div>
+
+        <div class="blog-sidebar-panel newsletter-panel" style="background:var(--color-maroon-900);">
+          <h3 style="color:var(--color-text-on-maroon);">Stay Updated</h3>
+          <p style="font-size:var(--fs-small); margin-bottom:var(--space-4);">Get new recipes and festival stories in your inbox.</p>
+          <form onsubmit="return false;">
+            <div class="field">
+              <label for="blog-email" class="sr-only">Email address</label>
+              <input id="blog-email" type="email" placeholder="Your email address">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+        <p>Bringing sweetness to your life with authentic, handcrafted mithai made from the finest ingredients. Every box tells a story of tradition and love.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a4 4 0 00-4 4v2H9v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html">Our Sweets</a></li>
+          <li><a href="gift-boxes.html">Gift Boxes</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="track-order.html">Track Order</a></li>
+          <li><a href="returns.html">Return &amp; Refund</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="corporate-orders.html">Corporate Orders</a></li>
+          <li><a href="gift-boxes.html">Wedding Gifting</a></li>
+          <li><a href="franchise.html">Franchise Opportunities</a></li>
+          <li><a href="store-locator.html">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:var(--fs-small); margin-bottom:var(--space-3);">Subscribe for sweet offers &amp; updates.</p>
+        <input type="email" placeholder="Your email address">
+        <button class="btn btn-primary btn-block">Subscribe</button>
+        <div class="footer-app-badges">
+          <img src="images/badge-google-play.svg" alt="Get it on Google Play">
+          <img src="images/badge-app-store.svg" alt="Download on the App Store">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Moments. All Rights Reserved.</p>
+      <div class="footer-payments">
+        <img src="images/pay-visa.svg" alt="Visa">
+        <img src="images/pay-mastercard.svg" alt="Mastercard">
+        <img src="images/pay-rupay.svg" alt="RuPay">
+        <img src="images/pay-upi.svg" alt="UPI">
+      </div>
+      <div class="flex gap-3">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

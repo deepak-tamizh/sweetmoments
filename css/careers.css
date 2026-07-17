@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Sweet Moments — Careers Page
+   Mobile-first
+   ========================================================================== */
+
+.careers-hero {
+  background: linear-gradient(115deg, #2b0d09 0%, #5c1b0c 60%, #7a2d12 100%);
+  color: var(--color-text-on-maroon);
+  padding: var(--space-8) 0;
+}
+.careers-hero .container {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media (min-width: 900px) { .careers-hero .container { grid-template-columns: 1.1fr 0.9fr; } }
+.careers-hero h1 { color: var(--color-text-on-maroon); margin-bottom: var(--space-3); }
+.careers-hero p { color: var(--color-text-on-maroon-muted); max-width: 460px; margin-bottom: var(--space-5); }
+.careers-hero-visual { display: flex; justify-content: center; }
+.careers-hero-visual svg { width: 100%; max-width: 360px; }
+@media (max-width: 899px) { .careers-hero-visual { display: none; } }
+
+/* ---------- Value props ---------- */
+.careers-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 700px) { .careers-values { grid-template-columns: repeat(4, 1fr); } }
+.careers-value-card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-3);
+  text-align: center;
+}
+.careers-value-icon {
+  width: 52px; height: 52px;
+  margin: 0 auto var(--space-3);
+  border-radius: 50%;
+  background: var(--color-gold-100);
+  color: var(--color-maroon-800);
+  display: flex; align-items: center; justify-content: center;
+}
+.careers-value-icon svg { width: 24px; height: 24px; }
+.careers-value-card h3 { font-size: 0.9rem; margin: 0; font-family: var(--font-body); }
+
+/* ---------- Openings table ---------- */
+.openings-table-wrap { overflow-x: auto; }
+.openings-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.openings-table th {
+  text-align: left;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  padding: var(--space-3) var(--space-3);
+  border-bottom: 2px solid var(--color-border);
+}
+.openings-table td {
+  padding: var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-small);
+  vertical-align: middle;
+}
+.openings-table tr:last-child td { border-bottom: none; }
+.job-title-cell strong { display: block; color: var(--color-text-dark); }
+.job-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-gold-100);
+  color: var(--color-gold-700);
+}
+
+/* ---------- Culture section ---------- */
+.culture-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+@media (min-width: 900px) { .culture-split { grid-template-columns: 0.9fr 1.1fr; } }
+.culture-photo {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-100));
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.culture-photo svg { width: 60%; }
+.culture-list { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
+.culture-list-item { display: flex; align-items: flex-start; gap: var(--space-3); font-size: var(--fs-small); }
+.culture-list-item svg { width: 20px; height: 20px; color: var(--color-success); flex-shrink: 0; margin-top: 2px; }
+
+/* ---------- Apply form ---------- */
+.apply-form {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+.upload-dropzone {
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+}
+.upload-dropzone svg { width: 32px; height: 32px; margin: 0 auto var(--space-2); color: var(--color-maroon-800); }

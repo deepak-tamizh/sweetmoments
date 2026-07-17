@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Sweet Moments</title>
+<meta name="description" content="Sweet Moments admin dashboard — sales overview, orders, inventory alerts and quick actions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+<div class="admin-sidebar-backdrop" data-admin-backdrop></div>
+<div class="admin-shell">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="admin-sidebar" data-admin-sidebar data-open="false">
+    <div class="admin-logo">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/><path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/></svg>
+      Sweet Moments
+    </div>
+    <nav class="admin-nav">
+      <a href="admin.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>Dashboard</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>Products</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>Orders</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>Customers</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12a2 2 0 000-4V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 000 4v2a2 2 0 000 4v2a2 2 0 002 2h12a2 2 0 002-2v-2a2 2 0 000-4z"/></svg>Coupons</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-6 9 6v11a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M9 21V12h6v9"/></svg>Inventory</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Payments</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>Reviews</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>Blogs</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg>Analytics</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>Reports</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M14 14c2.8 0 6 2 6 6"/></svg>Staff Management</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V7h11v9M14 10h4l3 3v3h-7"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="17.5" cy="16.5" r="1.8"/></svg>Delivery Management</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 20a2 2 0 004 0"/></svg>Notifications</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>SEO</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.2.63.75 1.09 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>Settings</a>
+    </nav>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <div class="admin-main">
+    <div class="admin-topbar">
+      <button class="admin-menu-btn" data-admin-menu-btn aria-label="Open sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <input class="admin-search" type="search" placeholder="Search... (Ctrl+K)">
+      <div class="admin-topbar-right">
+        <span style="font-size:var(--fs-xs); color:var(--color-text-muted);">09 May 2026 – 15 May 2026</span>
+        <button class="btn btn-outline btn-sm">Export Report</button>
+        <div class="admin-profile">
+          <span class="account-avatar" style="width:36px;height:36px;font-size:0.75rem;">SM</span>
+          <div class="admin-profile-info">
+            <strong>Admin</strong>
+            <span>Super Admin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-content">
+      <h1 style="font-size:var(--fs-h3); margin-bottom:var(--space-5);">Dashboard</h1>
+
+      <!-- ===== STAT CARDS ===== -->
+      <div class="admin-stat-grid">
+        <div class="admin-stat-card">
+          <div class="admin-stat-top">
+            <span class="admin-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 6V4H8v2"/><circle cx="16" cy="12.5" r="1.5"/></svg></span>
+            <span class="admin-stat-change">+12.5%</span>
+          </div>
+          <p class="admin-stat-value">₹12,45,890</p>
+          <p class="admin-stat-label">Total Revenue</p>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-top">
+            <span class="admin-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg></span>
+            <span class="admin-stat-change">+8.3%</span>
+          </div>
+          <p class="admin-stat-value">1,248</p>
+          <p class="admin-stat-label">Total Orders</p>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-top">
+            <span class="admin-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></span>
+            <span class="admin-stat-change">+15.2%</span>
+          </div>
+          <p class="admin-stat-value">356</p>
+          <p class="admin-stat-label">New Customers</p>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-top">
+            <span class="admin-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+            <span class="admin-stat-change">+3.1%</span>
+          </div>
+          <p class="admin-stat-value">₹998</p>
+          <p class="admin-stat-label">Avg Order Value</p>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-top">
+            <span class="admin-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span>
+            <span class="admin-stat-change">+9.8%</span>
+          </div>
+          <p class="admin-stat-value">₹3,45,670</p>
+          <p class="admin-stat-label">Total Profit</p>
+        </div>
+      </div>
+
+      <!-- ===== SALES OVERVIEW + ORDER STATUS ===== -->
+      <div class="admin-row cols-2-1">
+        <div class="admin-panel">
+          <div class="admin-panel-heading">
+            <h2>Sales Overview</h2>
+            <div class="chip-toggle">
+              <button class="active">This Week</button>
+              <button>This Month</button>
+            </div>
+          </div>
+          <svg viewBox="0 0 480 200" style="width:100%; height:auto;">
+            <line x1="0" y1="160" x2="480" y2="160" stroke="var(--color-border)" stroke-width="1"/>
+            <line x1="0" y1="110" x2="480" y2="110" stroke="var(--color-border)" stroke-width="1"/>
+            <line x1="0" y1="60" x2="480" y2="60" stroke="var(--color-border)" stroke-width="1"/>
+            <polyline points="10,120 80,100 150,130 220,70 290,90 360,40 450,60" fill="none" stroke="#8c1f26" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="10,150 80,140 150,150 220,120 290,130 360,100 450,110" fill="none" stroke="#e2a24e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="450" cy="60" r="4" fill="#8c1f26"/>
+          </svg>
+          <div style="display:flex; gap:var(--space-5); justify-content:center; margin-top:var(--space-3);">
+            <span style="font-size:var(--fs-xs); display:flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:#8c1f26; display:inline-block;"></span>This Week</span>
+            <span style="font-size:var(--fs-xs); display:flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:#e2a24e; display:inline-block;"></span>Last Week</span>
+          </div>
+        </div>
+
+        <div class="admin-panel">
+          <div class="admin-panel-heading"><h2>Order Status</h2></div>
+          <div class="donut-wrap">
+            <svg viewBox="0 0 120 120" width="140" height="140">
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#e7e0d6" stroke-width="18"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#3f8b4c" stroke-width="18" stroke-dasharray="180 283" stroke-dashoffset="0" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#3060a8" stroke-width="18" stroke-dasharray="60 283" stroke-dashoffset="-180" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#c98a1c" stroke-width="18" stroke-dasharray="30 283" stroke-dashoffset="-240" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#b23b3b" stroke-width="18" stroke-dasharray="13 283" stroke-dashoffset="-270" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-legend">
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#3f8b4c;"></span>Delivered · 64%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#3060a8;"></span>Shipped · 21%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#c98a1c;"></span>Processing · 11%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#b23b3b;"></span>Cancelled · 4%</span>
+            </div>
+          </div>
+          <p style="text-align:center; font-size:var(--fs-xs); color:var(--color-text-muted); margin-top:var(--space-3);">1,248 Total Orders</p>
+        </div>
+      </div>
+
+      <!-- ===== TOP SELLING PRODUCTS ===== -->
+      <div class="admin-panel">
+        <div class="admin-panel-heading">
+          <h2>Top Selling Products</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="top-product-row">
+          <div class="top-product-thumb"><svg viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 65,58 75,90 50,70 25,90 35,58 10,40 40,40" fill="#f0c988"/></svg></div>
+          <div class="top-product-info"><h4>Kaju Katli</h4><span>412 units sold</span></div>
+          <p class="top-product-value">₹1,25,890</p>
+        </div>
+        <div class="top-product-row">
+          <div class="top-product-thumb"><svg viewBox="0 0 100 100"><circle cx="35" cy="55" r="18" fill="#7a3418"/><circle cx="60" cy="45" r="18" fill="#8a4020"/></svg></div>
+          <div class="top-product-info"><h4>Gulab Jamun</h4><span>380 units sold</span></div>
+          <p class="top-product-value">₹96,400</p>
+        </div>
+        <div class="top-product-row">
+          <div class="top-product-thumb"><svg viewBox="0 0 100 100"><circle cx="38" cy="50" r="20" fill="#f6efe0"/><circle cx="66" cy="55" r="16" fill="#fdfaf3"/></svg></div>
+          <div class="top-product-info"><h4>Rasgulla</h4><span>298 units sold</span></div>
+          <p class="top-product-value">₹58,120</p>
+        </div>
+        <div class="top-product-row">
+          <div class="top-product-thumb"><svg viewBox="0 0 100 100"><circle cx="35" cy="45" r="16" fill="#e8952e"/><circle cx="60" cy="40" r="16" fill="#ec9f3c"/></svg></div>
+          <div class="top-product-info"><h4>Besan Ladoo</h4><span>256 units sold</span></div>
+          <p class="top-product-value">₹51,300</p>
+        </div>
+        <div class="top-product-row">
+          <div class="top-product-thumb"><svg viewBox="0 0 100 100"><rect x="28" y="32" width="44" height="36" fill="#c98a3c"/></svg></div>
+          <div class="top-product-info"><h4>Dry Fruit Barfi</h4><span>190 units sold</span></div>
+          <p class="top-product-value">₹1,08,600</p>
+        </div>
+      </div>
+
+      <!-- ===== ALERTS ===== -->
+      <div class="alert-grid" style="margin-bottom:var(--space-5);">
+        <div class="alert-card">
+          <strong>18</strong>
+          <span>Low Stock Items</span>
+          <a href="#">View Details →</a>
+        </div>
+        <div class="alert-card danger">
+          <strong>23</strong>
+          <span>Out of Stock</span>
+          <a href="#">View Details →</a>
+        </div>
+        <div class="alert-card">
+          <strong>15</strong>
+          <span>Expiring Soon</span>
+          <a href="#">View Details →</a>
+        </div>
+        <div class="alert-card info">
+          <strong>15</strong>
+          <span>Pending Payments</span>
+          <a href="#">View Details →</a>
+        </div>
+      </div>
+
+      <!-- ===== RECENT ORDERS ===== -->
+      <div class="admin-panel">
+        <div class="admin-panel-heading">
+          <h2>Recent Orders</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr><th>Order ID</th><th>Customer</th><th>Date</th><th>Amount</th><th>Status</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>#SM47245</td><td>Ramesh Kumar</td><td>10 May 2026</td><td>₹1,250</td><td><span class="order-status delivered">Delivered</span></td><td><a href="#" class="view-all">View</a></td></tr>
+              <tr><td>#SM47244</td><td>Priya Sharma</td><td>10 May 2026</td><td>₹890</td><td><span class="order-status shipped">Shipped</span></td><td><a href="#" class="view-all">View</a></td></tr>
+              <tr><td>#SM47243</td><td>Arun Vetri</td><td>9 May 2026</td><td>₹2,140</td><td><span class="order-status processing">Processing</span></td><td><a href="#" class="view-all">View</a></td></tr>
+              <tr><td>#SM47242</td><td>Nisha Bagh</td><td>9 May 2026</td><td>₹560</td><td><span class="order-status delivered">Delivered</span></td><td><a href="#" class="view-all">View</a></td></tr>
+              <tr><td>#SM47241</td><td>Suresh Reddy</td><td>8 May 2026</td><td>₹1,780</td><td><span class="order-status cancelled">Cancelled</span></td><td><a href="#" class="view-all">View</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== REVENUE BY CATEGORY + QUICK ACTIONS ===== -->
+      <div class="admin-row cols-1-1">
+        <div class="admin-panel">
+          <div class="admin-panel-heading"><h2>Revenue by Category</h2></div>
+          <div class="donut-wrap">
+            <svg viewBox="0 0 120 120" width="140" height="140">
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#e7e0d6" stroke-width="18"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#8c1f26" stroke-width="18" stroke-dasharray="130 283" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#e2a24e" stroke-width="18" stroke-dasharray="80 283" stroke-dashoffset="-130" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#3f8b4c" stroke-width="18" stroke-dasharray="45 283" stroke-dashoffset="-210" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#3060a8" stroke-width="18" stroke-dasharray="28 283" stroke-dashoffset="-255" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-legend">
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#8c1f26;"></span>Sweets · 46%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#e2a24e;"></span>Gift Boxes · 28%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#3f8b4c;"></span>Snacks · 16%</span>
+              <span class="donut-legend-item"><span class="donut-legend-dot" style="background:#3060a8;"></span>Beverages · 10%</span>
+            </div>
+          </div>
+          <p style="text-align:center; font-size:var(--fs-xs); color:var(--color-text-muted); margin-top:var(--space-3);">₹12,45,890 Total Revenue</p>
+        </div>
+
+        <div class="admin-panel">
+          <div class="admin-panel-heading"><h2>Quick Actions</h2></div>
+          <div class="quick-actions">
+            <a href="#" class="quick-action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>Add New Product</a>
+            <a href="#" class="quick-action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12a2 2 0 000-4V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 000 4v2a2 2 0 000 4v2a2 2 0 002 2h12a2 2 0 002-2v-2a2 2 0 000-4z"/></svg>Create Coupon</a>
+            <a href="#" class="quick-action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 1112 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 20a2 2 0 004 0"/></svg>Send Notification</a>
+            <a href="#" class="quick-action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>Generate Report</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

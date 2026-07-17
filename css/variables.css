@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Sweet Moments — Design Tokens
+   Extracted from reference designs (28 screens)
+   ========================================================================== */
+
+:root {
+  /* ---- Brand Colors ---- */
+  --color-maroon-900: #4a0810;   /* header / footer / deep brand bg */
+  --color-maroon-800: #5c0f17;
+  --color-maroon-700: #6a151d;
+  --color-maroon-accent: #8c1f26; /* hover state on maroon */
+
+  --color-gold-500: #ecc178;     /* primary button bg */
+  --color-gold-600: #dba95a;     /* primary button hover */
+  --color-gold-700: #6a3e21;     /* text on gold buttons */
+  --color-gold-100: #f7e6c4;     /* light gold tint / badges */
+
+  --color-cream-100: #fefaf7;    /* page background */
+  --color-cream-200: #fcf8f3;    /* card background */
+  --color-cream-300: #f4ece3;    /* subtle section band */
+
+  --color-text-dark: #241009;    /* headings */
+  --color-text-body: #5b4640;    /* paragraph text */
+  --color-text-muted: #8a7871;   /* captions, meta */
+  --color-text-on-maroon: #f6e9e3;
+  --color-text-on-maroon-muted: #c9a8a2;
+
+  --color-border: #ece0d6;
+  --color-success: #3f8b4c;
+  --color-warning: #c98a1c;
+  --color-danger: #b23b3b;
+
+  /* ---- Typography ---- */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-h1: clamp(1.75rem, 4.5vw, 3rem);
+  --fs-h2: clamp(1.5rem, 3.5vw, 2.25rem);
+  --fs-h3: clamp(1.15rem, 2.5vw, 1.5rem);
+  --fs-h4: 1.05rem;
+  --fs-body: 0.95rem;
+  --fs-small: 0.825rem;
+  --fs-xs: 0.7rem;
+
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-pad: 16px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 3px rgba(74, 8, 16, 0.08);
+  --shadow-md: 0 4px 16px rgba(74, 8, 16, 0.10);
+  --shadow-lg: 0 12px 32px rgba(74, 8, 16, 0.14);
+
+  /* ---- Motion ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* ---- Z-index scale ---- */
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-pad: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-pad: 40px;
+  }
+}

@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Sweet Moments — Checkout Page
+   Mobile-first
+   ========================================================================== */
+
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.checkout-steps::-webkit-scrollbar { display: none; }
+
+.checkout-step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+.checkout-step .step-num {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--color-cream-300);
+  color: var(--color-text-muted);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px;
+}
+.checkout-step.done .step-num { background: var(--color-success); color: #fff; }
+.checkout-step.active { color: var(--color-maroon-900); }
+.checkout-step.active .step-num { background: var(--color-maroon-900); color: var(--color-text-on-maroon); }
+.checkout-step-sep { width: 24px; height: 1px; background: var(--color-border); flex-shrink: 0; }
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .checkout-layout { grid-template-columns: 1fr 360px; }
+}
+
+.checkout-section {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+.checkout-section h2 {
+  font-size: var(--fs-h4);
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.checkout-section h2 svg { width: 20px; height: 20px; color: var(--color-maroon-800); }
+
+/* ---------- Saved address cards ---------- */
+.address-options { display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-4); }
+.address-card {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.address-card.selected { border-color: var(--color-maroon-800); background: var(--color-cream-100); }
+.address-card input[type="radio"] { margin-top: 3px; accent-color: var(--color-maroon-800); width: 18px; height: 18px; flex-shrink: 0; }
+.address-card h3 { font-family: var(--font-body); font-size: 0.9rem; font-weight: 700; margin: 0 0 4px; }
+.address-card p { font-size: var(--fs-small); color: var(--color-text-muted); margin: 0; }
+.address-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-maroon-800);
+  background: var(--color-gold-100);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  margin-left: var(--space-2);
+}
+
+/* ---------- Delivery options ---------- */
+.delivery-options { display: flex; flex-direction: column; gap: var(--space-3); }
+.delivery-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.delivery-option.selected { border-color: var(--color-maroon-800); background: var(--color-cream-100); }
+.delivery-option input { accent-color: var(--color-maroon-800); width: 18px; height: 18px; flex-shrink: 0; }
+.delivery-option-label { flex: 1; }
+.delivery-option-label strong { display: block; font-size: 0.9rem; }
+.delivery-option-label span { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.delivery-option-price { font-weight: 700; font-size: 0.9rem; }
+
+/* ---------- Payment methods ---------- */
+.payment-options { display: flex; flex-direction: column; gap: var(--space-3); }
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.payment-option.selected { border-color: var(--color-maroon-800); background: var(--color-cream-100); }
+.payment-option input { accent-color: var(--color-maroon-800); width: 18px; height: 18px; flex-shrink: 0; }
+.payment-option svg { width: 22px; height: 22px; color: var(--color-maroon-800); flex-shrink: 0; }
+.payment-option-label { flex: 1; font-size: 0.9rem; font-weight: 600; }
+.payment-option-sub { font-size: var(--fs-xs); color: var(--color-text-muted); font-weight: 400; display: block; }
+
+/* ---------- Order review sidebar ---------- */
+.checkout-summary {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  position: sticky;
+  top: 80px;
+}
+.checkout-summary h2 { font-size: var(--fs-h4); margin-bottom: var(--space-4); }
+
+.review-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+.review-item-thumb {
+  width: 48px; height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, var(--color-cream-300), var(--color-cream-100));
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.review-item-thumb svg { width: 60%; height: 60%; }
+.review-item-qty {
+  position: absolute;
+  top: -6px; right: -6px;
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon);
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.review-item-info { flex: 1; min-width: 0; }
+.review-item-info h4 { margin: 0; font-size: 0.85rem; }
+.review-item-info span { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.review-item-price { font-size: 0.85rem; font-weight: 700; }
+
+.summary-divider { border-top: 1px solid var(--color-border); margin: var(--space-4) 0; }

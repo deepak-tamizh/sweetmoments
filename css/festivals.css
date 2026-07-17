@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Sweet Moments — Festival Specials Page
+   Mobile-first
+   ========================================================================== */
+
+.fest-hero {
+  background: linear-gradient(115deg, #3a1408 0%, #7a2d12 55%, #b8481f 100%);
+  color: var(--color-text-on-maroon);
+  padding: var(--space-8) 0 var(--space-6);
+  text-align: center;
+}
+.fest-hero h1 { color: var(--color-text-on-maroon); margin-bottom: var(--space-3); }
+.fest-hero p { color: var(--color-text-on-maroon-muted); max-width: 520px; margin: 0 auto var(--space-6); }
+
+/* ---------- Festival filter tabs ---------- */
+.fest-tabs {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scrollbar-width: none;
+  justify-content: flex-start;
+}
+@media (min-width: 900px) { .fest-tabs { justify-content: center; } }
+.fest-tabs::-webkit-scrollbar { display: none; }
+
+.fest-tab-btn {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(246,233,227,0.35);
+  color: var(--color-text-on-maroon-muted);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.fest-tab-btn.active { background: var(--color-gold-500); border-color: var(--color-gold-500); color: var(--color-gold-700); }
+
+/* ---------- Festival banner grid ---------- */
+.fest-banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 700px) { .fest-banner-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.fest-banner {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-4);
+  isolation: isolate;
+}
+.fest-banner::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.6) 100%);
+  z-index: 0;
+}
+.fest-banner-label {
+  position: relative; z-index: 1;
+  color: #fff;
+}
+.fest-banner-label h3 { font-family: var(--font-display); color: #fff; font-size: 1.1rem; margin-bottom: 4px; }
+.fest-banner-label span { font-size: var(--fs-xs); opacity: 0.85; }
+
+.fest-diwali  { background: radial-gradient(circle at 70% 20%, #d97a35, #7a2d12 75%); }
+.fest-raksha  { background: radial-gradient(circle at 30% 20%, #c65a4a, #6a1520 75%); }
+.fest-pongal  { background: radial-gradient(circle at 70% 20%, #6a9c5a, #234a2b 75%); }
+.fest-eid     { background: radial-gradient(circle at 30% 20%, #2f6f6a, #103430 75%); }
+.fest-navratri{ background: radial-gradient(circle at 70% 20%, #b8548c, #5c1f45 75%); }
+.fest-holi    { background: radial-gradient(circle at 30% 20%, #4a9cc9, #1b4a63 75%); }
+.fest-christmas{ background: radial-gradient(circle at 70% 20%, #4a7a4f, #1b3a20 75%); }
+.fest-newyear { background: radial-gradient(circle at 30% 20%, #cc9a3a, #5c4310 75%); }
+
+/* ---------- Countdown CTA banner ---------- */
+.fest-cta {
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+}
+.fest-cta h2 { color: var(--color-text-on-maroon); margin-bottom: var(--space-2); }
+.fest-cta p { color: var(--color-text-on-maroon-muted); margin-bottom: var(--space-5); }
+.fest-countdown {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+.fest-countdown-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(246,233,227,0.2);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  min-width: 72px;
+}
+.fest-countdown-item strong { display: block; font-family: var(--font-display); font-size: 1.5rem; }
+.fest-countdown-item span { font-size: var(--fs-xs); color: var(--color-text-on-maroon-muted); }

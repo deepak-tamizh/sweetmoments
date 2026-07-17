@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Sweet Moments — Account Dashboard
+   Mobile-first
+   ========================================================================== */
+
+.account-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .account-layout { grid-template-columns: 260px 1fr; }
+}
+
+/* ---------- Sidebar ---------- */
+.account-sidebar {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.account-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+.account-avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--color-maroon-900);
+  color: var(--color-text-on-maroon);
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.account-profile h3 { margin: 0; font-size: 0.95rem; }
+.account-profile span { font-size: var(--fs-xs); color: var(--color-text-muted); }
+
+.account-nav { display: flex; flex-direction: column; padding: var(--space-2) 0; }
+.account-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px var(--space-5);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  border-left: 3px solid transparent;
+}
+.account-nav a svg { width: 18px; height: 18px; color: var(--color-text-muted); flex-shrink: 0; }
+.account-nav a:hover { background: var(--color-cream-300); }
+.account-nav a.active { color: var(--color-maroon-900); border-color: var(--color-gold-600); background: var(--color-cream-300); }
+.account-nav a.active svg { color: var(--color-maroon-900); }
+.account-nav a.logout { color: var(--color-danger); border-top: 1px solid var(--color-border); margin-top: var(--space-2); padding-top: 14px; }
+.account-nav a.logout svg { color: var(--color-danger); }
+
+/* ---------- Stat cards ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+@media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.stat-card {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+.stat-card-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--color-gold-100);
+  color: var(--color-maroon-800);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--space-3);
+}
+.stat-card-icon svg { width: 18px; height: 18px; }
+.stat-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin: 0; }
+.stat-label { font-size: var(--fs-xs); color: var(--color-text-muted); margin: 2px 0 0; }
+
+/* ---------- Dashboard panels ---------- */
+.dash-panel {
+  background: var(--color-cream-200);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+.dash-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+.dash-panel-heading h2 { font-size: var(--fs-h4); margin: 0; }
+
+/* Orders table (card-based on mobile) */
+.order-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+.order-row:last-child { border-bottom: none; }
+.order-id { font-weight: 700; font-size: 0.9rem; }
+.order-meta { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.order-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  justify-self: end;
+}
+.order-status.delivered { background: #e7f3e9; color: var(--color-success); }
+.order-status.shipped { background: #e7eef7; color: #3060a8; }
+.order-status.processing { background: var(--color-gold-100); color: var(--color-gold-700); }
+.order-status.cancelled { background: #f6e4e4; color: var(--color-danger); }
+
+/* Wishlist grid reused from product-card pattern */
+.wishlist-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+@media (min-width: 640px) { .wishlist-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* Two-panel split for saved address / invoices etc. */
+.account-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+@media (min-width: 700px) { .account-split { grid-template-columns: 1fr 1fr; } }
+
+.mini-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.mini-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-small);
+}
+.mini-list-item:last-child { border-bottom: none; }
+.mini-list-item strong { display: block; font-size: 0.85rem; }
+.mini-list-item span { color: var(--color-text-muted); font-size: var(--fs-xs); }
+
+/* Loyalty / referral highlight card */
+.loyalty-card {
+  background: linear-gradient(135deg, var(--color-maroon-900), var(--color-maroon-accent));
+  color: var(--color-text-on-maroon);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  text-align: center;
+}
+.loyalty-points { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin: var(--space-2) 0; }
+.loyalty-card p { color: var(--color-text-on-maroon-muted); font-size: var(--fs-small); margin-bottom: var(--space-4); }
+
+.referral-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-cream-100);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-4);
+}
+.referral-code { font-weight: 700; letter-spacing: 0.05em; color: var(--color-maroon-800); flex: 1; }

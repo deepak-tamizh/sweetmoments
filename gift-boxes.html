@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Boxes | Sweet Moments</title>
+<meta name="description" content="Curated Indian sweet gift boxes for corporate gifting, weddings, birthdays and festivals. Personalize, pack in bulk, and deliver across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/giftboxes.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Top utility bar (desktop only) -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>100% Pure &amp; Fresh</span>
+      <span>Handcrafted with Love</span>
+      <span>Delivery Across India</span>
+    </div>
+    <div class="topbar-right">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 3c2 3-1 4-1 6 0 1.5 1 2 2 2s2-1 2-2c1 2-1 5-3 5-2.5 0-4-2-4-4 0-2.5 2-4 4-7z" fill="currentColor"/>
+        <path d="M6 13c3-1 5 1 6 3 1-2 3-4 6-3-1 4-4 7-6 7s-5-3-6-7z" fill="currentColor"/>
+      </svg>
+      <span>Sweet Moments</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="gift-boxes.html" class="active">Gift Boxes</a></li>
+        <li><a href="festival-specials.html">Festival Specials</a></li>
+        <li><a href="corporate-orders.html">Corporate Orders</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn hide-mobile" href="account.html" aria-label="My account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h2l2.4 12.4a2 2 0 002 1.6h7.2a2 2 0 002-1.6L20 8H7"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">3</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Expandable search bar -->
+  <div class="search-bar" data-search-bar>
+    <div class="container">
+      <input type="search" placeholder="Search for sweets, gift boxes..." aria-label="Search products">
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav data-open="false">
+  <div class="mobile-nav-backdrop" data-mobile-nav-backdrop></div>
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+      <button class="mobile-nav-close" data-mobile-nav-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="sweets.html">Sweets</a></li>
+      <li><a href="gift-boxes.html" class="active">Gift Boxes</a></li>
+      <li><a href="festival-specials.html">Festival Specials</a></li>
+      <li><a href="corporate-orders.html">Corporate Orders</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="account.html">My Account</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="track-order.html">Track Order</a>
+      <a href="store-locator.html">Store Locator</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="gb-hero">
+    <div class="container">
+      <div>
+        <span class="hero-eyebrow">Gifting, Made Sweet</span>
+        <h1>Gifts That Create<br>Sweet Memories</h1>
+        <p>Make every occasion extra special with our exquisite gift boxes — handpicked, beautifully packed and crafted with love.</p>
+        <div class="gb-hero-actions">
+          <a href="#collection" class="btn btn-primary">Explore Gift Collection</a>
+          <a href="#bulk-orders" class="btn btn-outline-light">Request a Quote</a>
+        </div>
+      </div>
+      <div class="gb-hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 300 260">
+          <rect x="60" y="90" width="180" height="130" rx="8" fill="#8c1f26"/>
+          <path d="M60 100 L150 40 L240 100 Z" fill="#a52a2a"/>
+          <rect x="80" y="115" width="140" height="90" rx="4" fill="#3a1408"/>
+          <circle cx="105" cy="140" r="12" fill="#f3c76a"/>
+          <circle cx="135" cy="140" r="12" fill="#e2a24e"/>
+          <circle cx="165" cy="140" r="12" fill="#8a5a2b"/>
+          <circle cx="195" cy="140" r="12" fill="#f6efe0"/>
+          <circle cx="105" cy="170" r="12" fill="#e2a24e"/>
+          <circle cx="135" cy="170" r="12" fill="#f6efe0"/>
+          <circle cx="165" cy="170" r="12" fill="#f3c76a"/>
+          <circle cx="195" cy="170" r="12" fill="#8a5a2b"/>
+          <rect x="140" y="60" width="20" height="145" fill="#ecc178"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHOOSE THE PERFECT GIFT ===== -->
+  <section class="section" id="collection">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Gift Categories</span>
+        <h2>Choose the Perfect Gift</h2>
+      </div>
+      <div class="gb-cat-grid">
+        <div class="gb-cat-card">
+          <span class="gb-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 11h18M12 7V4M9 4h6"/></svg></span>
+          <h3>Corporate Gifting</h3>
+          <a href="corporate-orders.html">Explore →</a>
+        </div>
+        <div class="gb-cat-card">
+          <span class="gb-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></span>
+          <h3>Wedding Gifts</h3>
+          <a href="gift-boxes.html?cat=wedding">Explore →</a>
+        </div>
+        <div class="gb-cat-card">
+          <span class="gb-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 8v13M12 8a3 3 0 10-3-3c0 1.5 1 3 3 3zm0 0a3 3 0 003-3c0-1.5-1-3-3-3M5 12h14v9H5z"/></svg></span>
+          <h3>Birthday Gifts</h3>
+          <a href="gift-boxes.html?cat=birthday">Explore →</a>
+        </div>
+        <div class="gb-cat-card">
+          <span class="gb-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span>
+          <h3>Festival Gifts</h3>
+          <a href="festival-specials.html">Explore →</a>
+        </div>
+        <div class="gb-cat-card">
+          <span class="gb-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="7" height="11"/><rect x="14" y="4" width="7" height="16"/></svg></span>
+          <h3>Bulk Orders</h3>
+          <a href="#bulk-orders">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAKE IT EXTRA SPECIAL ===== -->
+  <section class="section section-band">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Personalize</span>
+        <h2>Make It Extra Special</h2>
+      </div>
+      <div class="gb-extra-grid">
+        <article class="gb-extra-card">
+          <div class="gb-extra-thumb"><svg viewBox="0 0 100 60"><rect x="15" y="10" width="70" height="40" rx="4" fill="#f6efe0"/><path d="M25 25h50M25 35h35" stroke="#c98a3c" stroke-width="2"/></svg></div>
+          <div class="card-body">
+            <h3>Personalized Message Card</h3>
+            <p>Add a handwritten note or custom-printed card to make your gift feel truly personal.</p>
+          </div>
+        </article>
+        <article class="gb-extra-card">
+          <div class="gb-extra-thumb"><svg viewBox="0 0 100 60"><rect x="20" y="12" width="60" height="36" fill="#8c1f26"/><rect x="20" y="12" width="60" height="10" fill="#6a151d"/><rect x="45" y="6" width="10" height="48" fill="#ecc178"/></svg></div>
+          <div class="card-body">
+            <h3>Premium Custom Packaging</h3>
+            <p>Choose from a range of elegant boxes, ribbons and wraps to suit any occasion.</p>
+          </div>
+        </article>
+        <article class="gb-extra-card">
+          <div class="gb-extra-thumb"><svg viewBox="0 0 100 60"><rect x="20" y="12" width="60" height="36" rx="4" fill="#3a1408"/><circle cx="50" cy="30" r="10" fill="#ecc178"/></svg></div>
+          <div class="card-body">
+            <h3>Add Your Logo</h3>
+            <p>Perfect for corporate gifting — brand your gift boxes with your company logo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BULK ORDERS ===== -->
+  <section class="section" id="bulk-orders">
+    <div class="container">
+      <div class="gb-bulk-split">
+        <div>
+          <span class="eyebrow">Bulk Ordering</span>
+          <h2>Bulk Orders Made Easy</h2>
+          <p>We handle everything from packaging to pan-India delivery, so your corporate gifting is one less thing to worry about.</p>
+          <div class="gb-bulk-list">
+            <div class="gb-bulk-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Competitive bulk pricing</div>
+            <div class="gb-bulk-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</div>
+            <div class="gb-bulk-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Pan India delivery, on schedule</div>
+            <div class="gb-bulk-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Flexible payment options</div>
+          </div>
+
+          <span class="eyebrow" style="display:block; margin-top:var(--space-6);">Ideal For</span>
+          <div class="gb-ideal-chips" style="margin-top:var(--space-3);">
+            <span class="gb-ideal-chip">Corporate Events</span>
+            <span class="gb-ideal-chip">Weddings</span>
+            <span class="gb-ideal-chip">Festivals</span>
+            <span class="gb-ideal-chip">Employee Appreciation</span>
+            <span class="gb-ideal-chip">Client Gifting</span>
+          </div>
+        </div>
+
+        <form class="gb-quote-form" onsubmit="return false;">
+          <h3 style="margin-bottom:var(--space-4);">Request a Bulk Order Quote</h3>
+          <div class="field">
+            <label for="gb-name">Full Name</label>
+            <input id="gb-name" type="text" placeholder="Your name">
+          </div>
+          <div class="field-row cols-2">
+            <div class="field">
+              <label for="gb-phone">Phone Number</label>
+              <input id="gb-phone" type="tel" placeholder="+91 98765 43210">
+            </div>
+            <div class="field">
+              <label for="gb-email">Email Address</label>
+              <input id="gb-email" type="email" placeholder="you@company.com">
+            </div>
+          </div>
+          <div class="field-row cols-2">
+            <div class="field">
+              <label for="gb-qty">Estimated Quantity</label>
+              <input id="gb-qty" type="text" placeholder="e.g. 100 boxes">
+            </div>
+            <div class="field">
+              <label for="gb-date">Delivery Date</label>
+              <input id="gb-date" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="gb-message">Additional Requirements</label>
+            <textarea id="gb-message" placeholder="Tell us about packaging, branding or delivery needs"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US FOR GIFTING ===== -->
+  <section class="section section-band">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why Choose Sweet Moments for Gifting</h2>
+      </div>
+      <div class="gb-trust-grid">
+        <div class="gb-trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+          <p>90,000+ Happy Customers</p>
+        </div>
+        <div class="gb-trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+          <p>100% Quality Guarantee</p>
+        </div>
+        <div class="gb-trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <p>On-Time Delivery</p>
+        </div>
+        <div class="gb-trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+          <p>Secure &amp; Safe Payments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED GIFT BOXES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="panel-heading">
+        <h2>Our Gift Boxes</h2>
+      </div>
+      <div class="grid grid-sm-2 grid-md-4 giftbox-grid">
+        <a class="card giftbox-card" href="product-detail.html">
+          <div class="product-thumb"><svg viewBox="0 0 100 100"><rect x="20" y="30" width="60" height="45" fill="#8c1f26"/><rect x="20" y="30" width="60" height="10" fill="#6a151d"/><rect x="45" y="18" width="10" height="57" fill="#ecc178"/></svg></div>
+          <div class="card-body"><h3 class="product-title">Corporate Gift Box</h3><p class="product-price">₹1,450</p></div>
+        </a>
+        <a class="card giftbox-card" href="product-detail.html">
+          <div class="product-thumb"><svg viewBox="0 0 100 100"><rect x="18" y="28" width="64" height="48" fill="#b23b3b"/><rect x="18" y="28" width="64" height="10" fill="#8c1f26"/><circle cx="50" cy="52" r="10" fill="#ecc178"/></svg></div>
+          <div class="card-body"><h3 class="product-title">Wedding Gift Box</h3><p class="product-price">₹2,250</p></div>
+        </a>
+        <a class="card giftbox-card" href="product-detail.html">
+          <div class="product-thumb"><svg viewBox="0 0 100 100"><rect x="20" y="30" width="60" height="45" fill="#c98a3c"/><rect x="20" y="30" width="60" height="10" fill="#a06a26"/><rect x="45" y="18" width="10" height="57" fill="#7a3418"/></svg></div>
+          <div class="card-body"><h3 class="product-title">Festive Gift Box</h3><p class="product-price">₹1,750</p></div>
+        </a>
+        <a class="card giftbox-card" href="product-detail.html">
+          <div class="product-thumb"><svg viewBox="0 0 100 100"><rect x="20" y="26" width="60" height="50" fill="#3a1408"/><rect x="20" y="26" width="60" height="10" fill="#241009"/><rect x="45" y="14" width="10" height="62" fill="#ecc178"/></svg></div>
+          <div class="card-body"><h3 class="product-title">Luxury Collection</h3><p class="product-price">₹3,250</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>Sweet Moments</span></a>
+        <p>Bringing sweetness to your life with authentic, handcrafted mithai made from the finest ingredients. Every box tells a story of tradition and love.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a4 4 0 00-4 4v2H9v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html">Our Sweets</a></li>
+          <li><a href="gift-boxes.html">Gift Boxes</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="track-order.html">Track Order</a></li>
+          <li><a href="returns.html">Return &amp; Refund</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="corporate-orders.html">Corporate Orders</a></li>
+          <li><a href="gift-boxes.html">Wedding Gifting</a></li>
+          <li><a href="franchise.html">Franchise Opportunities</a></li>
+          <li><a href="store-locator.html">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="font-size:var(--fs-small); margin-bottom:var(--space-3);">Subscribe for sweet offers &amp; updates.</p>
+        <input type="email" placeholder="Your email address">
+        <button class="btn btn-primary btn-block">Subscribe</button>
+        <div class="footer-app-badges">
+          <img src="images/badge-google-play.svg" alt="Get it on Google Play">
+          <img src="images/badge-app-store.svg" alt="Download on the App Store">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Moments. All Rights Reserved.</p>
+      <div class="footer-payments">
+        <img src="images/pay-visa.svg" alt="Visa">
+        <img src="images/pay-mastercard.svg" alt="Mastercard">
+        <img src="images/pay-rupay.svg" alt="RuPay">
+        <img src="images/pay-upi.svg" alt="UPI">
+      </div>
+      <div class="flex gap-3">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
