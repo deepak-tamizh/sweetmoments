@@ -54,5 +54,3 @@
     });
   }
 })();
-
-console.log("hello")
