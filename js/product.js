@@ -53,4 +53,3 @@
       display.textContent = qty;
     });
   }
-})();
