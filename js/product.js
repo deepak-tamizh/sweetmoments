@@ -53,3 +53,4 @@
       display.textContent = qty;
     });
   }
+})();
